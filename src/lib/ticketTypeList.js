@@ -21,7 +21,7 @@ export const ticketTypeList = [
     id: "ticket-form-4",
     type: "General Group Discount (5 Pax)",
     price: "1850 per pax",
-    value: "option4",
+    value: "",
   },
   {
     id: "ticket-form-5",
