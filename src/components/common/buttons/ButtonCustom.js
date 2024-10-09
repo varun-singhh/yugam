@@ -3,29 +3,27 @@ import Link from "next/link";
 import React from "react";
 import { useRouter } from "next/navigation";
 
-const ButtonCustom = ({ link, className, children, count, price, amount }) => {
+const ButtonCustom = ({ link, className, children, count, price }) => {
   const router = useRouter();
   // console.log("ticketcount=" + count);
+  // console.log("price=" + price);
+
   const makePayment = async () => {
-    // console.log("price=" + price);
-
-    // console.log("amt=" + amount);
-
     const data = await fetch("api/razorpay", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ amount: amount }),
+      body: JSON.stringify({ amount: 1234 }),
     }).then((t) => t.json());
 
     const options = {
       key: data.key,
-      name: "Eventiva",
+      name: "Your Company",
       currency: data.currency,
       amount: data.amount,
       order_id: data.order_id,
-      description: "Booking ticket",
+      description: "Test Transaction",
       handler: async function (response) {
         console.log("abc=", response);
 
@@ -49,9 +47,9 @@ const ButtonCustom = ({ link, className, children, count, price, amount }) => {
         }
       },
       prefill: {
-        name: "",
-        email: "",
-        contact: "",
+        name: "abc",
+        email: "example@gmail.com",
+        contact: "9898989898",
       },
     };
 
