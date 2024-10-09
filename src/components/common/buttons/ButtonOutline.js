@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 
 const ButtonOutline = ({ link, className, children, price }) => {
   const router = useRouter();
-  console.log("price= " + price);
+  // console.log("price= " + price);
 
   const makePayment = async () => {
     const data = await fetch("api/razorpay", {
@@ -28,17 +28,13 @@ const ButtonOutline = ({ link, className, children, price }) => {
 
         const res = await fetch("api/paymentverify", {
           method: "POST",
-          // headers: {
-          //   // Authorization: 'YOUR_AUTH_HERE'
-          // },
+
           body: JSON.stringify({
             razorpay_payment_id: response.razorpay_payment_id,
             razorpay_order_id: response.razorpay_order_id,
             razorpay_signature: response.razorpay_signature,
           }),
         }).then((t) => t.json());
-
-        // const res = await veri;
 
         console.log("response verify==", res);
 
@@ -47,13 +43,7 @@ const ButtonOutline = ({ link, className, children, price }) => {
           router.push(
             "/paymentsuccess?paymentid=" + response.razorpay_payment_id
           );
-          // router.push("/paymentsuccess");
-          // router.push("/home-2");
         }
-
-        // alert(response.razorpay_payment_id);
-        // alert(response.razorpay_order_id);
-        // alert(response.razorpay_signature);
       },
       prefill: {
         // name: "",
