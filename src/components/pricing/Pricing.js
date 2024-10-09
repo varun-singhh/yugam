@@ -131,11 +131,6 @@ const Pricing = ({ styleNum, styleNum2 }) => {
         </div>
         {/* -- swiper -- */}
       </div>
-
-      <div>
-      <BuyNowButton />
-    </div>
-
     </section>
   );
 };
