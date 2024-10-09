@@ -13,6 +13,8 @@ const TicketCount = () => {
 
   // function for increment and decrement ticket counter
   const handleTicketCount = (action) => {
+    console.log("ticket selected:" + activeTicket);
+
     if (action === "plus") {
       setTicketCount(ticketCount + 1);
     } else {
@@ -67,7 +69,11 @@ const TicketCount = () => {
           </span>
         </div>
         <div className="text-lg-end">
-          <ButtonCustom className={"btn-gradient gap-2"} link={"#"}>
+          <ButtonCustom
+            className={"btn-gradient gap-2"}
+            link={"#"}
+            count={ticketCount}
+          >
             <TicketIcon height={"25"} width={"25"} />
             Buy Ticket
           </ButtonCustom>
