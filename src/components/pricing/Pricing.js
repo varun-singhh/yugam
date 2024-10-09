@@ -109,7 +109,7 @@ const Pricing = ({ styleNum, styleNum2 }) => {
               }}
             >
               {pricingData.map(
-                ({ id, card_name, features, icon, link, price }) => {
+                ({ id, card_name, features, icon, link, price, amount }) => {
                   return (
                     <SwiperSlide key={id} className="swiper-slide">
                       <PricingCard
@@ -119,6 +119,7 @@ const Pricing = ({ styleNum, styleNum2 }) => {
                         icon={icon}
                         link={link}
                         price={price}
+                        amount={amount}
                         styleNum2={styleNum2}
                       />
                     </SwiperSlide>
