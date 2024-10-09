@@ -1,21 +1,21 @@
 // pages/api/razorpay.js
-import Razorpay from 'razorpay';
-import shortid from 'shortid';
+import Razorpay from "razorpay";
+import shortid from "shortid";
 
 const razorpay = new Razorpay({
-  key_id: 'rzp_test_tPTtL8y2SO52z4',
-  key_secret: 'dTo6q3YPa0E18EFDaIXKLZUn',
+  key_id: process.env.RAZORPAY_API_KEY,
+  key_secret: process.env.RAZORPAY_APT_SECRET,
 });
 
 export default async function handler(req, res) {
-  if (req.method === 'POST') {
+  if (req.method === "POST") {
     const { amount } = req.body;
 
     const options = {
       amount: (amount * 100).toString(), // Amount in paisa
-      currency: 'INR',
+      currency: "INR",
       receipt: shortid.generate(),
-      payment_capture: '1',
+      payment_capture: "1",
     };
 
     try {
@@ -23,9 +23,9 @@ export default async function handler(req, res) {
       res.status(200).json(response);
     } catch (err) {
       console.error(err);
-      res.status(500).json({ error: 'Internal server error' });
+      res.status(500).json({ error: "Internal server error" });
     }
   } else {
-    res.status(405).json({ error: 'Method not allowed' });
+    res.status(405).json({ error: "Method not allowed" });
   }
 }

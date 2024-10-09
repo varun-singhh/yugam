@@ -10,6 +10,7 @@ import Gallery from "@/components/gallery/Gallery";
 import Faq from "@/components/faq/Faq";
 import BlogSeven from "@/components/blogs/BlogSeven";
 import Ticket from "@/components/tickets/TcketOne";
+import Pricing from "@/components/pricing/Pricing";
 import Cta from "@/components/cta/Cta";
 import SubscriptionOne from "@/components/subscriptions/SubscriptionOne";
 import ScheduleSeven from "@/components/schedules/ScheduleSeven";
@@ -23,11 +24,11 @@ const Home5 = () => {
     <>
       <BannerFive />
       <CountDown styleNum={4} />
-      <Ticket styleNum={5} />
       <AboutSeven styleNum={0} />
       <LineupSeven />
       <ScrollSection />
       <HighlightOne styleNum={1} />
+      <Pricing styleNum={0} styleNum2={0} />
       <ScheduleSeven styleNum={0} />
       <SponsorSlider styleNum={1} />
       <Gallery styleNum={3} />
