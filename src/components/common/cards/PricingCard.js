@@ -10,7 +10,6 @@ const PricingCard = ({
   card_name,
   features,
   link,
-  amount,
   styleNum2,
 }) => {
   // styleNum 0 from Home page 1 and Home page 2
@@ -114,7 +113,6 @@ const PricingCard = ({
         {isBtnOutline ? (
           <ButtonOutline
             price={price}
-            amount={amount}
             className={`${id === 1 ? "btn-primary" : "btn-outline-primary"}`}
           >
             Buy Now
@@ -122,7 +120,6 @@ const PricingCard = ({
         ) : (
           <ButtonCustom
             price={price}
-            amount={amount}
             className={`${id === 1 ? "btn-gradient" : "btn-outline-gradient"}`}
           >
             Buy Now

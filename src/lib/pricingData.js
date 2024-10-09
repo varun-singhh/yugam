@@ -9,7 +9,6 @@ export const pricingData = [
     icon: <PriceIcon1 />,
     price: "₹42",
     link: "#",
-    amount: 42,
     features: [
       {
         id: 1,
@@ -31,7 +30,6 @@ export const pricingData = [
     icon: <PriceIcon2 />,
     price: "₹100",
     link: "#",
-    amount: 100,
     features: [
       {
         id: 1,
@@ -53,7 +51,6 @@ export const pricingData = [
     icon: <PriceIcon3 />,
     price: "₹25",
     link: "#",
-    amount: 25,
     features: [
       {
         id: 1,
