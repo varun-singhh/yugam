@@ -1,4 +1,5 @@
 import React from "react";
+import Script from "next/script";
 import "@/assets/css/animate.css";
 import "@/assets/scss/style.scss";
 import logo from "@/assets/images/global/favicon.ico";
@@ -56,13 +57,16 @@ const roboto = Roboto({
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${open_sans.variable} ${plus_jakarta_sans.variable} ${poppins.variable} ${roboto.variable} `}
-    >
-      <body suppressHydrationWarning={true}>
-        <LayoutChildren>{children}</LayoutChildren>
-      </body>
-    </html>
+    <>
+      <html
+        lang="en"
+        className={`${open_sans.variable} ${plus_jakarta_sans.variable} ${poppins.variable} ${roboto.variable} `}
+      >
+        <body suppressHydrationWarning={true}>
+          <LayoutChildren>{children}</LayoutChildren>
+        </body>
+      </html>
+      <Script src="https://checkout.razorpay.com/v1/checkout.js" />
+    </>
   );
 }

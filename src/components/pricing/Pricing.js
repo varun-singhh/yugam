@@ -9,6 +9,7 @@ import SectionDesc from "@/components/common/sectionTitle/SectionDesc";
 import PricingCard from "@/components/common/cards/PricingCard";
 import SectionTitleTwo from "@/components/common/sectionTitle/SectionTitleTwo";
 import { pricingData } from "@/lib/pricingData";
+import BuyNowButton from "../buynowbtn/buynotbtn";
 
 const Pricing = ({ styleNum, styleNum2 }) => {
   // styleNum 0 from home page 1 and home page 2
