@@ -27,7 +27,7 @@ const Home1 = () => {
     <>
       <NavbarOne />
       <BannerOne />
-      <TicketOne styleNum={1} />
+      {/* <TicketOne styleNum={1} /> */}
       <CountDown styleNum={0} />
       <HighlightOne styleNum={0} />
       <Award />

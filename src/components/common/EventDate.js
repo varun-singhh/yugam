@@ -65,11 +65,8 @@ const EventDate = ({ styleNum }) => {
           </div>
           <div className="col-md-3 col-xxl-2 col-xl-3 col-lg-3">
             <div>
-              <ButtonCustom className={buttonClass} link={"#schedule"}>
-                <span className="contact-plus-icon">
-                  <ContactPlusIcon />
-                </span>
-                Interested
+              <ButtonCustom className={buttonClass} link={"#pricing"}>
+                Buy Tickets
               </ButtonCustom>
             </div>
           </div>
