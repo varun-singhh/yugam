@@ -13,6 +13,7 @@ import Ticket from "@/components/tickets/TcketOne";
 import Cta from "@/components/cta/Cta";
 import SubscriptionOne from "@/components/subscriptions/SubscriptionOne";
 import ScheduleSeven from "@/components/schedules/ScheduleSeven";
+import TicketOne from "@/components/tickets/TcketOne";
 
 export const metadata = {
   title: "yugam next.js - Home5",
@@ -23,7 +24,7 @@ const Home5 = () => {
     <>
       <BannerFive />
       <CountDown styleNum={4} />
-      <Ticket styleNum={5} />
+      <TicketOne styleNum={5} />
       <AboutSeven styleNum={0} />
       <LineupSeven />
       <ScrollSection />

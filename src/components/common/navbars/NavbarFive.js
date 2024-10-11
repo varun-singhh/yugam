@@ -24,18 +24,8 @@ const NavbarFive = () => {
           <nav className="navbar navbar-expand-xl custom-inner-bg">
             <div className="d-flex w-100 justify-content-between align-items-center">
               <Link className="navbar-brand" href="/" aria-label="nav-brands">
-                <Image
-                  src={logo}
-                  className="logo-light"
-                  alt="logo"
-                  width={10}
-                />
-                <Image
-                  src={logo_dark}
-                  className="logo-dark"
-                  alt="logo"
-                  width={10}
-                />
+                <Image src={logo} className="logo-light" alt="logo" />
+                <Image src={logo_dark} className="logo-dark" alt="logo" />
               </Link>
               <button
                 className="navbar-toggler"
@@ -101,9 +91,9 @@ const NavbarFive = () => {
                       );
                     })}
                   </ul>
-                  <ButtonFill className={"gap-2"} link={"#"}>
+                  <ButtonFill className={"gap-2"} link={"/#ticket"}>
                     <TicketIcon height={"25"} width={"25"} />
-                    Buy Ticket
+                    Get Ticket
                   </ButtonFill>
                 </div>
               </div>
