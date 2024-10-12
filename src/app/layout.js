@@ -2,7 +2,7 @@ import React from "react";
 import Script from "next/script";
 import "@/assets/css/animate.css";
 import "@/assets/scss/style.scss";
-import logo from "@/assets/images/global/favicon.ico";
+import logo from "@/assets/images/global/logo.png";
 import LayoutChildren from "@/lib/layoutChildren";
 import {
   Open_Sans,
@@ -10,8 +10,6 @@ import {
   Plus_Jakarta_Sans,
   Roboto,
 } from "next/font/google";
-import NavbarOne from "@/components/common/navbars/NavbarOne";
-import FooterOne from "@/components/common/footers/FooterOne";
 
 export const metadata = {
   title: "yugam next.js template",

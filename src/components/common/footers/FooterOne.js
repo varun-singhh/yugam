@@ -24,26 +24,66 @@ const FooterOne = () => {
               . All rights Reserved.
             </p>
           </div>
-          <div className="col-lg-4 order-1 order-lg-2">
-            <Link
+          <div className="col-lg-3 order-1 order-lg-2">
+            {/* <Link
               className="navbar-brand d-flex justify-content-center"
               href="/home-1/"
               aria-label="nav-brands"
             >
               <Image src={logo} className="logo-light" alt="logo" />
               <Image src={logo_dark} className="logo-dark" alt="logo" />
-            </Link>
+            </Link> */}
           </div>
-          <div className="col-lg-4 order-2 order-lg-3">
+          <div className="col-lg-5 order-2 order-lg-3">
             <ul className="footer-nav list-unstyled d-flex justify-content-center justify-content-lg-end gap-30 mb-0 custom-font-style-1">
               <li className="nav-item">
-                <Link href="#" className="nav-link" aria-label="nav-links">
-                  Privecy Policy
+                <Link
+                  href="/#line-up-cultural"
+                  className="nav-link"
+                  aria-label="nav-links"
+                >
+                  Line-Up
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="#" className="nav-link" aria-label="nav-links">
-                  Terms & Conditions
+                <Link
+                  href="/#yugam-headline"
+                  className="nav-link"
+                  aria-label="nav-links"
+                >
+                  Latest News
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  href="/contact-us#contactForm"
+                  className="nav-link"
+                  aria-label="nav-links"
+                >
+                  Become a Sponsor
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/venue" className="nav-link" aria-label="nav-links">
+                  Venue
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  href="/#schedule"
+                  className="nav-link"
+                  aria-label="nav-links"
+                >
+                  Schedule
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  href="/contact-us"
+                  className="nav-link"
+                  aria-label="nav-links"
+                >
+                  Contact Us
                 </Link>
               </li>
             </ul>

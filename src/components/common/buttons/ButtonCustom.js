@@ -2,9 +2,17 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import LoadingScreen from "../loadingScreen";
+import LoadingScreen from "../LoadingScreen";
 
-const ButtonCustom = ({ link, className, children, count, price, amount }) => {
+const ButtonCustom = ({
+  link,
+  className,
+  children,
+  count,
+  price,
+  amount,
+  activeTicket,
+}) => {
   //afterPayment loading screen
   const [isLoading, setIsLoading] = useState(false);
   //Button when clicked and razorpay is loading
@@ -62,6 +70,8 @@ const ButtonCustom = ({ link, className, children, count, price, amount }) => {
               razorpay_payment_id: response.razorpay_payment_id,
               razorpay_order_id: response.razorpay_order_id,
               razorpay_signature: response.razorpay_signature,
+              count,
+              activeTicket,
             }),
           }).then((t) => t.json());
 

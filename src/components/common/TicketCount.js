@@ -97,6 +97,7 @@ const TicketCount = () => {
           <ButtonCustom
             className={"btn-gradient gap-2"}
             count={ticketCount}
+            activeTicket={activeTicket}
             price={selectedPrice}
             amount={totalAmount}
           >

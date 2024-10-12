@@ -7,8 +7,8 @@ import Direction from "@/components/direction/Direction";
 import Contact from "@/components/contact/Contact";
 
 export const metadata = {
-  title: "yugam next.js - Contact-us",
-  description: "yugam next.js multipage webdite with next.js and bootstrap",
+  title: "Contact-us",
+  description: "Contact us page",
 };
 const ContactUs = () => {
   return (

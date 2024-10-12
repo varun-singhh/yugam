@@ -1,26 +1,13 @@
 "use client";
 import React, { useEffect } from "react";
 import Link from "next/link";
-
 import { useSearchParams } from "next/navigation";
 
 const Success = () => {
   const searchParams = useSearchParams();
   const paymentid = searchParams.get("paymentid");
 
-  //   return (
-  //     <div>
-  //       <div role="alert">
-  //         <strong>Payment successful!</strong>
-  //         <span>Your paymentID= {paymentid} has been processed.</span>
-
-  //       </div>
-  //     </div>
-  //   );
-  // };
-
   useEffect(() => {
-    // Create animated confetti background
     const createConfetti = () => {
       const container = document.getElementById("confetti-container");
       if (!container) return;
@@ -39,7 +26,6 @@ const Success = () => {
 
     createConfetti();
 
-    // Cleanup function to remove confetti
     return () => {
       const container = document.getElementById("confetti-container");
       if (container) {
@@ -63,30 +49,31 @@ const Success = () => {
           background: linear-gradient(276deg, #e7801a 0%, #a83808 100%);
           border-radius: 15px;
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+          padding: 2rem;
+          margin: 1rem;
         }
 
         .success-icon {
-          width: 90px;
-          height: 90px;
+          width: 70px;
+          height: 70px;
           background-color: #fff;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
-          margin: 0 auto;
-          margin-bottom: 20px;
+          margin: 0 auto 1rem auto;
         }
 
         .success-icon i {
           color: #e7801a;
-          font-size: 45px;
+          font-size: 35px;
         }
 
         .payment-details {
           background-color: rgba(0, 0, 0, 0.2);
           border-radius: 10px;
-          padding: 20px;
-          margin-top: 20px;
+          padding: 1rem;
+          margin-top: 1rem;
         }
 
         .btn-black {
@@ -94,6 +81,9 @@ const Success = () => {
           color: #fff;
           border: 2px solid #fff;
           transition: all 0.3s ease;
+          padding: 0.5rem 1rem;
+          font-size: 1rem;
+          margin-top: 1rem;
         }
 
         .btn-black:hover {
@@ -127,47 +117,71 @@ const Success = () => {
           pointer-events: none;
           z-index: 1;
         }
+
+        @media (max-width: 768px) {
+          .success-card {
+            padding: 1rem;
+          }
+
+          .success-icon {
+            width: 50px;
+            height: 50px;
+          }
+
+          .success-icon i {
+            font-size: 25px;
+          }
+
+          h2 {
+            font-size: 1.5rem;
+          }
+
+          .payment-details {
+            padding: 0.5rem;
+          }
+
+          .btn-black {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.9rem;
+          }
+        }
       `}</style>
 
       <div id="confetti-container" />
 
-      <div className="container py-5 min-vh-100 d-flex align-items-center">
+      <div className="container py-3 min-vh-100 d-flex align-items-center">
         <div className="row justify-content-center w-100">
-          <div className="col-md-8 col-lg-6">
+          <div className="col-12 col-md-8 col-lg-6">
             <div
-              className="success-card p-4 p-md-5 text-center position-relative"
+              className="success-card text-center position-relative"
               style={{ zIndex: 2 }}
             >
               <div className="success-icon">
                 <i className="fas fa-check"></i>
               </div>
 
-              <h2 className="mb-4 fw-bold">Payment Successful!</h2>
+              <h2 className="mb-3 fw-bold">Payment Successful!</h2>
 
               <div className="payment-details">
-                <div className="row mb-3">
-                  <div className="col-12">
-                    <h5 className="mb-3">Payment Details</h5>
-                    <div className="d-flex justify-content-between mb-2">
-                      <span>Payment ID:</span>
-                      <strong>{paymentid}</strong>
-                    </div>
-                    <div className="d-flex justify-content-between mb-2">
-                      <span>Status:</span>
-                      <strong style={{ color: "#3ad244" }}>Completed</strong>
-                    </div>
-                  </div>
+                <h5 className="mb-2">Payment Details</h5>
+                <div className="d-flex justify-content-between mb-2">
+                  <span>Payment ID:</span>
+                  <strong>{paymentid}</strong>
+                </div>
+                <div className="d-flex justify-content-between mb-2">
+                  <span>Status:</span>
+                  <strong style={{ color: "#3ad244" }}>Completed</strong>
                 </div>
               </div>
 
-              <p className="mt-4 mb-4">
+              <p className="mt-3 mb-3">
                 Thank you for booking with Eventia! Your payment has been
                 processed successfully. You will receive a confirmation email
                 shortly with your ticket details.
               </p>
 
-              <div className="d-grid gap-2 d-md-flex justify-content-center">
-                <Link href="/" className="btn btn-black btn-lg px-4 me-md-2">
+              <div className="d-grid">
+                <Link href="/" className="btn btn-black">
                   Go to Home
                 </Link>
               </div>

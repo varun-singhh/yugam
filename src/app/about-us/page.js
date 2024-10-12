@@ -10,8 +10,8 @@ import SubscriptionTwo from "@/components/subscriptions/SubscriptionTwo";
 import Direction from "@/components/direction/Direction";
 
 export const metadata = {
-  title: "yugam next.js - About-us",
-  description: "yugam next.js multipage webdite with next.js and bootstrap",
+  title: "About-us",
+  description: "About Us Page",
 };
 const AboutUs = () => {
   return (
@@ -24,7 +24,6 @@ const AboutUs = () => {
       <SponsorDark />
       <TicketTwo />
       <Direction styleNum={0} />
-      <SubscriptionTwo styleNum={0} />
     </>
   );
 };

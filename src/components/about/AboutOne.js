@@ -22,7 +22,7 @@ const AboutOne = () => {
               </h1>
               <ButtonCustom
                 className={"gap-2 btn-gradient mt-4 mt-lg-40 mt-xxl-60"}
-                link={"/home-1/#ticket"}
+                link={"/#ticket"}
               >
                 <TicketIcon height={"25"} width={"25"} />
                 Get Ticket

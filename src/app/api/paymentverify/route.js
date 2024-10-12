@@ -13,10 +13,27 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+// Function to get ticket description based on ticket ID
+function getTicketDescription(activeTicket) {
+  switch (activeTicket) {
+    case "ticket-form-1":
+      return "Full Day Pass";
+    case "ticket-form-2":
+      return "Day 1 Pass";
+    case "ticket-form-3":
+      return "Day 2 Pass";
+    default:
+      return "Error occurred";
+  }
+}
+
 async function sendConfirmationEmail(paymentDetails) {
+  const ticketType = getTicketDescription(paymentDetails.activeTicket);
+
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: paymentDetails.email,
+    cc: "solomonsalfie73@gmail.com",
     subject: "Payment Confirmation Eventiva",
     html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -68,6 +85,16 @@ async function sendConfirmationEmail(paymentDetails) {
                               paymentDetails.created_at * 1000
                             ).toLocaleDateString()}</td>
                         </tr>
+                        <tr>
+                            <td style="padding: 8px 0;"><strong>Ticket Type:</strong></td>
+                            <td style="padding: 8px 0;">${ticketType}</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px 0;"><strong>Quantity:</strong></td>
+                            <td style="padding: 8px 0;">${
+                              paymentDetails.count
+                            }</td>
+                        </tr>
                     </table>
                 </div>
 
@@ -114,8 +141,13 @@ const instance = new Razorpay({
 });
 
 export async function POST(req, res) {
-  const { razorpay_order_id, razorpay_payment_id, razorpay_signature } =
-    await req.json();
+  const {
+    razorpay_order_id,
+    razorpay_payment_id,
+    razorpay_signature,
+    count,
+    activeTicket,
+  } = await req.json();
 
   const paymentDetails = await fetch(
     `https://api.razorpay.com/v1/payments/${razorpay_payment_id}`,
@@ -171,6 +203,8 @@ export async function POST(req, res) {
     contact: contact,
     razorpay_payment_id,
     razorpay_order_id,
+    count,
+    activeTicket,
   });
   return NextResponse.json(
     {

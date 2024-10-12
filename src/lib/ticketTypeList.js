@@ -1,32 +1,20 @@
 export const ticketTypeList = [
   {
     id: "ticket-form-1",
-    type: "General Admission (Single Entry)",
-    price: "2200",
+    type: "Full Event Pass",
+    price: "1299",
     value: "option1",
   },
   {
     id: "ticket-form-2",
-    type: "VIP Experience",
-    price: "5000",
+    type: "Day 1 Pass (Cultural Fest)",
+    price: "499",
     value: "option2",
   },
   {
     id: "ticket-form-3",
-    type: "Student Discount (Single Entry)",
-    price: "1650",
+    type: " Day 2 Pass (Musical Fest)",
+    price: "499",
     value: "option3",
-  },
-  {
-    id: "ticket-form-4",
-    type: "General Group Discount (5 Pax)",
-    price: "1850 per pax",
-    value: "option4",
-  },
-  {
-    id: "ticket-form-5",
-    type: "General Group Discount (8 Pax)",
-    price: "1750 per pax",
-    value: "option5",
   },
 ];
