@@ -36,18 +36,6 @@ const ScheduleThree = ({ dotsImage }) => {
                   }
                   className={"custom-jakarta custom-font-style-2"}
                 />
-                <div className="pt-4 pt-lg-30 ">
-                  <Link
-                    href="#"
-                    className="download-link d-flex align-items-center gap-40 custom-sans-serif"
-                    aria-label="buttons"
-                  >
-                    Download Agenda{" "}
-                    <span className="ticket-arrow arrow-down-right">
-                      <DownRightArrow height={"36"} width={"36"} />{" "}
-                    </span>{" "}
-                  </Link>
-                </div>
               </div>
               {/* <!-- schedule-left-content --> */}
             </div>
