@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import Razorpay from "razorpay";
-import shortid from "shortid";
 import crypto from "crypto";
 import nodemailer from "nodemailer";
 
@@ -33,7 +32,7 @@ async function sendConfirmationEmail(paymentDetails) {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: paymentDetails.email,
-    cc: "solomonsalfie73@gmail.com",
+    cc: "solomonsalfie73@gmail.com", //enter mail of admin/management
     subject: "Payment Confirmation Eventiva",
     html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -161,7 +160,7 @@ export async function POST(req, res) {
   ).then((res) => res.json());
 
   // Verify payment and process with email and contact
-  console.log(paymentDetails);
+  // console.log(paymentDetails);
 
   const email = paymentDetails.email;
   const contact = paymentDetails.contact;
@@ -180,8 +179,8 @@ export async function POST(req, res) {
   const isAuthentic = expectedSignature === razorpay_signature;
 
   if (isAuthentic) {
-    console.log("Payment successfully verified");
-    console.log("email and contact=" + email + " " + contact);
+    // console.log("Payment successfully verified");
+    // console.log("email and contact=" + email + " " + contact);
   } else {
     return NextResponse.json(
       {
@@ -195,7 +194,7 @@ export async function POST(req, res) {
 
   // Send confirmation email
   const emailSent = await sendConfirmationEmail({
-    name: "Monil",
+    name: "",
     email: email,
     amount: amount,
     created_at: created_at,
