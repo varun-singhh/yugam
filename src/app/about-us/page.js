@@ -6,7 +6,6 @@ import HighlightTwo from "@/components/highlights/HighlightTwo";
 import TicketTwo from "@/components/tickets/TicketTwo";
 import EventCounterTwo from "@/components/common/eventCounter/EventCounterTwo";
 import SponsorDark from "@/components/sponsores/SponsorDark";
-import SubscriptionTwo from "@/components/subscriptions/SubscriptionTwo";
 import Direction from "@/components/direction/Direction";
 
 export const metadata = {

@@ -14,7 +14,7 @@ export const ticketTypeList = [
   {
     id: "ticket-form-3",
     type: " Day 2 Pass (Musical Fest)",
-    price: "499",
+    price: "999",
     value: "option3",
   },
 ];

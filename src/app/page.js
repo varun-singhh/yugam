@@ -1,16 +1,10 @@
 import React from "react";
-import BannerOne from "@/components/heroes/BannerOne";
 import CountDown from "@/components/common/CountDown";
 import HighlightOne from "@/components/highlights/HighlightOne";
-import Award from "@/components/awards/Award";
 import ScrollSection from "@/components/common/ScrollSection";
 import LineupOne from "@/components/lineups/LineupOne";
-import ScheduleOne from "@/components/schedules/ScheduleOne";
-import Separator from "@/components/common/Separator";
-import Pricing from "@/components/pricing/Pricing";
 import Faq from "@/components/faq/Faq";
 import SponsorSlider from "@/components/sponsores/SponsorSlider";
-import BlogOne from "@/components/blogs/BlogOne";
 import Cta from "@/components/cta/Cta";
 import SubscriptionOne from "@/components/subscriptions/SubscriptionOne";
 import Gallery from "@/components/gallery/Gallery";
@@ -22,7 +16,8 @@ import AboutSeven from "@/components/about/AboutSeven";
 import LineupSeven from "@/components/lineups/LineupSeven";
 import ScheduleSeven from "@/components/schedules/ScheduleSeven";
 import BlogSeven from "@/components/blogs/BlogSeven";
-import BannerFive from "@/components/heroes/BannerFive";
+
+import Banner from "@/components/heroes/Banner";
 import Head from "next/head";
 
 export const metadata = {
@@ -109,7 +104,7 @@ const Home1 = () => {
       </Head>
 
       <NavbarFive />
-      <BannerFive />
+      <Banner />
       <CountDown styleNum={4} />
       {/* <TicketOne styleNum={5} /> */}
       <AboutSeven styleNum={0} />

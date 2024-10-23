@@ -2,6 +2,8 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+import tick from "@/assets/images/global/tick.png";
+import Image from "next/image";
 
 const Success = () => {
   const searchParams = useSearchParams();
@@ -54,26 +56,40 @@ const Success = () => {
         }
 
         .success-icon {
-          width: 70px;
-          height: 70px;
+          width: 60px;
+          height: 60px;
           background-color: #fff;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
           margin: 0 auto 1rem auto;
-        }
-
-        .success-icon i {
-          color: #e7801a;
-          font-size: 35px;
+          overflow: hidden;
         }
 
         .payment-details {
-          background-color: rgba(0, 0, 0, 0.2);
+          background-color: rgba(0, 0, 0, 0);
           border-radius: 10px;
           padding: 1rem;
           margin-top: 1rem;
+        }
+
+        .payment-details-row {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-bottom: 0.5rem;
+        }
+
+        .payment-details-label {
+          flex: 0 0 auto;
+          margin-right: 0.5rem;
+        }
+
+        .payment-details-value {
+          flex: 1 1 auto;
+          text-align: right;
+          word-break: break-all;
         }
 
         .btn-black {
@@ -118,7 +134,38 @@ const Success = () => {
           z-index: 1;
         }
 
+        .barcode-section {
+          background-color: white;
+          border-radius: 10px;
+          padding: 1rem;
+          margin-top: 1rem;
+          color: #333;
+        }
+
+        .barcode-section h3 {
+          margin-top: 0;
+          color: #333;
+        }
+
+        .barcode-section p {
+          margin: 5px 0;
+        }
+
+        .barcode-section img {
+          max-width: 100%;
+          height: auto;
+          margin-top: 1rem;
+        }
+
         @media (max-width: 768px) {
+          .payment-details-row {
+            flex-direction: column;
+          }
+
+          .payment-details-value {
+            text-align: center;
+          }
+
           .success-card {
             padding: 1rem;
           }
@@ -126,10 +173,6 @@ const Success = () => {
           .success-icon {
             width: 50px;
             height: 50px;
-          }
-
-          .success-icon i {
-            font-size: 25px;
           }
 
           h2 {
@@ -157,21 +200,39 @@ const Success = () => {
               style={{ zIndex: 2 }}
             >
               <div className="success-icon">
-                <i className="fas fa-check"></i>
+                {/* <i className="fas fa-check"></i> */}
+                <Image src={tick} alt="tick" width={80} height={80} />
+                {/* <img src={tick} alt="tick" /> */}
               </div>
 
               <h2 className="mb-3 fw-bold">Payment Successful!</h2>
 
               <div className="payment-details">
-                <h5 className="mb-2">Payment Details</h5>
-                <div className="d-flex justify-content-between mb-2">
-                  <span>Payment ID:</span>
-                  <strong>{paymentid}</strong>
+                <div className="payment-details-row">
+                  <span className="payment-details-label">Payment ID:</span>
+                  <strong className="payment-details-value">{paymentid}</strong>
                 </div>
-                <div className="d-flex justify-content-between mb-2">
-                  <span>Status:</span>
-                  <strong style={{ color: "#3ad244" }}>Completed</strong>
+                <div className="payment-details-row">
+                  <span className="payment-details-label">Status:</span>
+                  <strong
+                    className="payment-details-value"
+                    style={{ color: "#3ad244" }}
+                  >
+                    Completed
+                  </strong>
                 </div>
+              </div>
+
+              <div className="barcode-section">
+                <h3>Your Ticket</h3>
+                <p>
+                  Please present this ticket at the entry to get the event
+                  wristband for access.
+                </p>
+                <img
+                  src={`https://barcode.tec-it.com/barcode.ashx?data=${paymentid}&code=Code128&dpi=96`}
+                  alt="Barcode"
+                />
               </div>
 
               <p className="mt-3 mb-3">

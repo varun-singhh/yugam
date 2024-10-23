@@ -60,7 +60,7 @@ const ButtonCustom = ({
       description: "Booking ticket",
       handler: async function (response) {
         try {
-          console.log("abc=", response);
+          // console.log("abc=", response);
           setIsLoading(true); // Show loading screen when payment completes
 
           const res = await fetch("api/paymentverify", {
