@@ -9,8 +9,8 @@ import useStickyHeader from "@/hooks/useStickyHeader";
 import NavbarOffcanvas from "@/components/common/navbars/NavbarOffcanvas";
 import useHoverDropdown from "@/hooks/useHoverDropdown";
 
-import logo from "@/assets/images/global/logo.png";
-import logo_dark from "@/assets/images/global/logo-dark.png";
+import logo from "@/assets/images/global/logo-dark-yugam.png";
+import logo_dark from "@/assets/images/global/logo-dark-yugam.png";
 import { menuList } from "@/lib/menuList";
 
 const NavbarFive = () => {
@@ -24,7 +24,12 @@ const NavbarFive = () => {
           <nav className="navbar navbar-expand-xl custom-inner-bg">
             <div className="d-flex w-100 justify-content-between align-items-center">
               <Link className="navbar-brand" href="/" aria-label="nav-brands">
-                <Image src={logo} className="logo-light" alt="logo" />
+                <Image
+                  src={logo}
+                  className="logo-light"
+                  alt="logo"
+                  width="200"
+                />
                 <Image src={logo_dark} className="logo-dark" alt="logo" />
               </Link>
               <button

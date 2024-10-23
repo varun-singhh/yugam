@@ -26,7 +26,7 @@ const ScheduleFive = () => {
               <div className="section-title section-title-style-2 mb-30 mb-lg-40 mb-xxl-60">
                 <SectionName name={"Schedule"} className={"fs-3"} />
                 <SectionTitleTwo
-                  title={"Melody"}
+                  title={"Yugam"}
                   subTitle={"Agenda"}
                   titleClass={""}
                   subTitleClass={"primary-text-shadow"}
@@ -39,19 +39,6 @@ const ScheduleFive = () => {
                 }
                 className={"custom-font-style-1 custom-sans"}
               />
-
-              <div className="pt-4 pt-lg-30 mb-10 mb-lg-40">
-                <Link
-                  href="#"
-                  className="download-link d-flex align-items-center gap-40"
-                  aria-label="buttons"
-                >
-                  Download Agenda{" "}
-                  <span className="ticket-arrow arrow-down-right">
-                    <DownRightArrow />
-                  </span>
-                </Link>
-              </div>
 
               <div className="schedule-image bg-mask d-none d-lg-block">
                 <Image src={schedule_img} className="img-fluid" alt="image" />
