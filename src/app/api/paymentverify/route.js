@@ -97,6 +97,15 @@ async function sendConfirmationEmail(paymentDetails) {
                     </table>
                 </div>
 
+                <!-- Barcode Section -->
+        <div style="background-color: white; padding: 20px; border-radius: 4px; margin-bottom: 20px; text-align: center;">
+          <h3 style="color: #333; margin-top: 0;">Your Ticket</h3>
+          <p style="margin: 5px 0;">Please present this ticket at the entry to get the event wristband for access.</p>
+          <img src="https://barcode.tec-it.com/barcode.ashx?data=${
+            paymentDetails.razorpay_payment_id
+          }&code=Code128&dpi=96" alt="Barcode" style="margin-top: 20px;" />
+        </div>
+
                 <!-- Contact Info -->
                 <div style="background-color: white; padding: 20px; border-radius: 4px;">
                     <h3 style="color: #333; margin-top: 0;">Customer Information</h3>

@@ -162,7 +162,7 @@
       border-radius: 30px;
       background: linear-gradient(
         190deg,
-        rgba(178, 13, 93, 0) 4.66%,
+        rgba(231, 128, 26, 0) 4.66%,
         rgba(199, 89, 11, 0.81) 86.28%
       );
     }
@@ -170,7 +170,7 @@
       &::after {
         background: linear-gradient(
           174deg,
-          rgba(178, 13, 93, 0) 46.95%,
+          rgba(231, 128, 26, 0) 46.95%,
           rgba(var(--#{$prefix}primary-rgb), 0.81) 103.38%
         );
       }

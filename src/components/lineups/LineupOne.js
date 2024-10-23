@@ -31,7 +31,7 @@ const LineupOne = () => {
                 <SectionName name={"Line-Up"} className={"fs-3"} />
                 <SectionTitleTwo
                   title={"Cultural"}
-                  subTitle={"Extravaganza"}
+                  subTitle={"Extravaganzaaaaaa"}
                   titleClass={""}
                   subTitleClass={"primary-text-shadow"}
                 />

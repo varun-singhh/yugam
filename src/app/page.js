@@ -16,7 +16,8 @@ import AboutSeven from "@/components/about/AboutSeven";
 import LineupSeven from "@/components/lineups/LineupSeven";
 import ScheduleSeven from "@/components/schedules/ScheduleSeven";
 import BlogSeven from "@/components/blogs/BlogSeven";
-import BannerFive from "@/components/heroes/BannerFive";
+
+import Banner from "@/components/heroes/Banner";
 import Head from "next/head";
 
 export const metadata = {
@@ -103,7 +104,7 @@ const Home1 = () => {
       </Head>
 
       <NavbarFive />
-      <BannerFive />
+      <Banner />
       <CountDown styleNum={4} />
       <TicketOne styleNum={5} />
       <AboutSeven styleNum={0} />
