@@ -21,7 +21,7 @@ import Banner from "@/components/heroes/Banner";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Home",
+  title: "Yugam 2024",
   description: "Homepage",
 };
 const Home1 = () => {
@@ -106,14 +106,14 @@ const Home1 = () => {
       <NavbarFive />
       <Banner />
       <CountDown styleNum={4} />
-      {/* <TicketOne styleNum={5} /> */}
+      <TicketOne styleNum={5} />
       <AboutSeven styleNum={0} />
 
       <LineupOne />
-      {/*<LineupSeven /> */}
+      <LineupSeven />
       <ScrollSection />
       <HighlightOne styleNum={1} />
-      {/* <ScheduleSeven styleNum={0} /> */}
+      <ScheduleSeven styleNum={0} />
       <SponsorSlider styleNum={1} />
       <Gallery styleNum={3} />
       <Faq styleNum={1} />

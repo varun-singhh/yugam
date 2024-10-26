@@ -9,8 +9,9 @@ const Banner = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const backgrounds = [
+    "/images/hero-101.jpg",
+    "/images/hero-102.jpg",
     "/images/hero-5-bg.jpg",
-    "/images/hero-8-bg.jpg",
     "/images/hero-4.jpg",
   ];
 

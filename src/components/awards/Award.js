@@ -10,7 +10,7 @@ import RoundText from "@/components/common/RoundText";
 import VideoIcon from "@/components/common/icons/VideoIcon";
 import EvModal from "@/components/common/EvModal";
 
-import award_img_1 from "@/assets/images/home-1/award-image-1.jpg";
+import award_img_1 from "@/assets/images/hero-5-bg.jpgg";
 
 const Award = () => {
   const [currentId, setCurrentId] = useState(0);
@@ -109,7 +109,9 @@ const Award = () => {
           setModalIsOpen={setModalIsOpen}
           currentId={currentId}
           type={type}
-          url={"https://www.youtube.com/embed/0O2aH4XLbto"}
+          url={
+            "https://www.instagram.com/reel/DBA4g4atz6x/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+          }
         />
       )}
     </section>

@@ -57,7 +57,7 @@ const AboutThree = ({ styleNum }) => {
               />
               <SectionDesc
                 desc={
-                  "Experience Yugam: where melodies transcend boundaries. Immerse in captivating performances that ignite the stage. Unleash your musical senses and embrace rhythmic bliss."
+                  "Experiences Yugam: where melodies transcend boundaries. Immerse in captivating performances that ignite the stage. Unleash your musical senses and embrace rhythmic bliss."
                 }
                 className={sectionDescClass}
               />
