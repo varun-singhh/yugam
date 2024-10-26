@@ -114,11 +114,11 @@ const Home1 = () => {
       <ScrollSection />
       <HighlightOne styleNum={1} />
       <ScheduleSeven styleNum={0} />
-      <SponsorSlider styleNum={1} />
+      {/* <SponsorSlider styleNum={1} /> */}
       <Gallery styleNum={3} />
       <Faq styleNum={1} />
       <ScrollSection />
-      <BlogSeven />
+      {/* <BlogSeven /> */}
       <Cta styleNum={3} />
       <SubscriptionOne styleNum={3} />
       <FooterOne />

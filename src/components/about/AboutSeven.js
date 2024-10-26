@@ -51,7 +51,7 @@ const AboutSeven = ({ styleNum }) => {
               />
               <SectionDesc
                 desc={
-                  "Don't miss this extraordinary celebration of music and create memories that will last a lifetime."
+                  "Don't miss this extraordinary celebration of music and culture, Create memories that will last a lifetime."
                 }
                 className={sectionDescClass}
               />

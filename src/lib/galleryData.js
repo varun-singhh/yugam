@@ -1,4 +1,4 @@
-import gallery_1 from "@/assets/images/gallery-1.jpg";
+import gallery_1 from "@/assets/images/gallery-1.jpeg";
 import gallery_2 from "@/assets/images/gallery-2.jpg";
 import gallery_3 from "@/assets/images/gallery-3.jpg";
 import gallery_4 from "@/assets/images/gallery-4.jpg";
@@ -7,15 +7,15 @@ import gallery_6 from "@/assets/images/gallery-6.jpg";
 import gallery_7 from "@/assets/images/gallery-7.jpg";
 import gallery_8 from "@/assets/images/gallery-8.jpg";
 import gallery_9 from "@/assets/images/gallery-9.jpg";
-import gallery_10 from "@/assets/images/gallery-10.jpg";
-import gallery_11 from "@/assets/images/gallery-11.jpg";
+import gallery_10 from "@/assets/images/gallery-10.webp";
+import gallery_11 from "@/assets/images/gallery-11.png";
 
 export const galleryData = [
   {
     id: 1,
     thumb: gallery_1,
-    type: "Video",
-    link: "https://www.instagram.com/yugam.live/reel/DBA4g4atz6x/",
+    type: "Image",
+    link: "#",
   },
   {
     id: 2,
@@ -26,8 +26,8 @@ export const galleryData = [
   {
     id: 3,
     thumb: gallery_3,
-    type: "Video",
-    link: "https://www.instagram.com/yugam.live/reel/DBA4g4atz6x/",
+    type: "Image",
+    link: "#",
   },
   {
     id: 4,
@@ -38,8 +38,8 @@ export const galleryData = [
   {
     id: 5,
     thumb: gallery_5,
-    type: "Video",
-    link: "https://www.instagram.com/yugam.live/reel/DBA4g4atz6x/",
+    type: "Image",
+    link: "#",
   },
   {
     id: 6,
@@ -50,8 +50,8 @@ export const galleryData = [
   {
     id: 7,
     thumb: gallery_7,
-    type: "Video",
-    link: "https://www.instagram.com/yugam.live/reel/DBA4g4atz6x/",
+    type: "Image",
+    link: "#",
   },
   {
     id: 8,
@@ -62,8 +62,8 @@ export const galleryData = [
   {
     id: 9,
     thumb: gallery_9,
-    type: "Video",
-    link: "https://www.instagram.com/yugam.live/reel/DBA4g4atz6x/",
+    type: "Image",
+    link: "#",
   },
   {
     id: 10,
@@ -74,14 +74,14 @@ export const galleryData = [
   {
     id: 11,
     thumb: gallery_11,
-    type: "Video",
-    link: "https://www.instagram.com/yugam.live/reel/DBA4g4atz6x/",
+    type: "Image",
+    link: "#",
   },
   {
     id: 12,
     thumb: gallery_1,
-    type: "Video",
-    link: "https://www.instagram.com/yugam.live/reel/DBA4g4atz6x/",
+    type: "Image",
+    link: "#",
   },
   {
     id: 13,
@@ -92,8 +92,8 @@ export const galleryData = [
   {
     id: 14,
     thumb: gallery_3,
-    type: "Video",
-    link: "https://www.instagram.com/yugam.live/reel/DBA4g4atz6x/",
+    type: "Image",
+    link: "#",
   },
   {
     id: 15,

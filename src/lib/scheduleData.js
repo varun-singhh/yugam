@@ -24,7 +24,7 @@ export const scheduleData = [
       {
         id: 4,
         date: "12:45 PM",
-        vanu: "Live Set by Rahgir",
+        vanu: "Live Performance by Rahgir",
         desc: "Experience the poetic magic of Rahgir, as he takes the stage with songs that capture heart and soul.",
       },
       {
@@ -54,7 +54,7 @@ export const scheduleData = [
       {
         id: 9,
         date: "8:00 PM",
-        vanu: "Bollywood + Techno Night by DJ Aerreo",
+        vanu: "Bollywood + Techno Night by Aerreo",
         desc: "Hit the dance floor and let DJ Aerreo’s beats take you on an exhilarating musical journey.",
       },
       {

@@ -41,8 +41,8 @@ const EventDate = ({ styleNum }) => {
           </div>
           <div className="col-md-5 col-xl-4 col-lg-5">
             <div className="event-content ms-xxl-5">
-              <h2>De Paris</h2>
-              <h4>Cantoment, Varanasi</h4>
+              <h2>Sports Ground</h2>
+              <h4>Sampurna Nand Sanskrit University</h4>
             </div>
           </div>
           <div className="col-md-3 col-xl-2 col-lg-3">
@@ -58,7 +58,7 @@ const EventDate = ({ styleNum }) => {
                     rootMargin: "0px 0px -100px 0px",
                   }}
                 /> */}
-                673+
+                478+
               </span>
               <h4>Attending</h4>
             </div>

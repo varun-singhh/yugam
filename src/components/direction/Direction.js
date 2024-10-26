@@ -57,8 +57,11 @@ const Direction = ({ styleNum }) => {
                     </svg>
                   </span>
                   <div className="map-popup-content">
-                    <h3>Basement</h3>
-                    <p>135W, 46nd Street, New York</p>
+                    <h3>Sports Ground</h3>
+                    <p>
+                      Sampurnanand Sanskrit Vishwavidyalaya, 8XHX+G57,
+                      Jagatganj, Chaukaghat, Varanasi
+                    </p>
                   </div>
                 </div>
               </div>
@@ -76,9 +79,12 @@ const Direction = ({ styleNum }) => {
                       <span className="straight-line"></span>Venue
                     </span>
                     <div className="mt-10 mt-lg-30">
-                      <h4 className="custom-jakarta fw-extra-bold">BASEMENT</h4>
+                      <h4 className="custom-jakarta fw-extra-bold">
+                        Sports Ground
+                      </h4>
                       <h4 className="custom-jakarta fw-normal">
-                        135 W, 46nd Street, New York, USA
+                        Sampurnanand Sanskrit Vishwavidyalaya, 8XHX+G57,
+                        Jagatganj, Chaukaghat, Varanasi
                       </h4>
                     </div>
                   </div>
@@ -88,10 +94,10 @@ const Direction = ({ styleNum }) => {
                     </span>
                     <div className="mt-10 mt-lg-30">
                       <h4 className="custom-jakarta fw-normal">
-                        25th - 28th December
+                        17th November 2024
                       </h4>
                       <h4 className="custom-jakarta fw-normal">
-                        Thursday - Saturday 22:30 - 07:00
+                        Sunday 10:00 AM - 11:00 PM
                       </h4>
                     </div>
                   </div>

@@ -18,7 +18,7 @@ const AboutOne = () => {
               </div>
               {/* -- section-title -- */}
               <h1 className="display-5 custom-jakarta fw-extra-bold mb-0">
-                Where music and magic unite for unforgettable experiences
+                Where music and culture unite for unforgettable experiences
               </h1>
               <ButtonCustom
                 className={"gap-2 btn-gradient mt-4 mt-lg-40 mt-xxl-60"}

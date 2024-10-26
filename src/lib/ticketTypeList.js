@@ -2,7 +2,7 @@ export const ticketTypeList = [
   {
     id: "ticket-form-1",
     type: "Cultural Pass (10:00 AM - 3:00 PM)",
-    price: "399",
+    price: "499",
     value: "option1",
   },
   {
