@@ -8,11 +8,7 @@ const useCountDown = () => {
     currentMinutes: 0,
     currentSeconds: 0,
   });
-<<<<<<< HEAD
-  const targetDate = new Date("2024-11-16T10:00:00").getTime();
-=======
   const targetDate = new Date("2024-11-17T10:00:00").getTime();
->>>>>>> monil/payment_module
 
   function updateCountdown() {
     const now = new Date().getTime();
