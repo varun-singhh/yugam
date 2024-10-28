@@ -5,9 +5,130 @@ import { useSearchParams } from "next/navigation";
 import tick from "@/assets/images/global/tick.png";
 import Image from "next/image";
 
-const Success = () => {
+const Ticket = () => {
   const searchParams = useSearchParams();
   const paymentid = searchParams.get("paymentid");
+  const ticketRef = useRef(null); // Ref to capture ticket for PDF download
+
+  const styles = {
+    container: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      flexDirection: "column",
+      height: "100vh",
+      backgroundColor: "#f7f7f7",
+    },
+    successMessage: {
+      textAlign: "center",
+      marginBottom: "20px",
+      padding: "10px",
+      backgroundColor: "#dff0d8",
+      borderRadius: "8px",
+      boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
+      color: "#3c763d",
+      fontSize: "18px",
+    },
+    ticket: {
+      display: "flex",
+      width: "600px",
+      backgroundColor: "#fff",
+      borderRadius: "10px",
+      boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.1)",
+      textAlign: "left",
+      padding: "20px",
+      border: "2px solid #e0e0e0",
+    },
+
+    tickettop: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      width: "600px",
+      backgroundColor: "#fff",
+      borderRadius: "10px",
+      boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.1)",
+      textAlign: "left",
+      padding: "20px",
+      border: "2px solid #e0e0e0",
+    },
+    leftSection: {
+      flex: 2,
+      paddingRight: "20px",
+      borderRight: "2px dashed #ccc",
+    },
+    rightSection: {
+      flex: 1,
+      textAlign: "center",
+      paddingLeft: "20px",
+    },
+    heading: {
+      fontSize: "24px",
+      fontWeight: "bold",
+    },
+    subheading: {
+      fontSize: "18px",
+      marginBottom: "10px",
+    },
+    details: {
+      margin: "15px 0",
+      fontSize: "14px",
+      color: "#555",
+    },
+    barcodeContainer: {
+      marginTop: "20px",
+    },
+    ticketInfo: {
+      fontSize: "14px",
+      color: "#333",
+    },
+    barcodeText: {
+      marginTop: "10px",
+      fontSize: "12px",
+      color: "#777",
+    },
+    downloadButton: {
+      marginTop: "20px",
+      padding: "10px 20px",
+      backgroundColor: "#28a745",
+      color: "#fff",
+      border: "none",
+      borderRadius: "5px",
+      cursor: "pointer",
+    },
+    checkmarkContainer: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    checkmarkCircle: {
+      width: "60px",
+      height: "60px",
+    },
+    checkmarkCircleSvg: {
+      stroke: "#4caf50",
+      strokeWidth: "2.5",
+      animation: "circle 0.6s ease-in-out forwards",
+    },
+    checkmarkCheck: {
+      stroke: "#4caf50",
+      strokeWidth: "3",
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      animation: "checkmark 0.4s ease-in-out 0.6s forwards",
+    },
+  };
+
+  // Function to download the ticket as a PDF
+  const handleDownload = () => {
+    const ticket = ticketRef.current;
+    html2canvas(ticket).then((canvas) => {
+      const imgData = canvas.toDataURL("image/png");
+      const pdf = new jsPDF();
+      pdf.addImage(imgData, "PNG", 0, 0);
+      pdf.save("ticket.pdf");
+    });
+  };
 
   useEffect(() => {
     const createConfetti = () => {
@@ -254,4 +375,4 @@ const Success = () => {
   );
 };
 
-export default Success;
+export default Ticket;

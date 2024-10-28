@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
 
+import InsiderEmbed from "./Insider";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { Autoplay } from "swiper/modules";
@@ -14,14 +13,9 @@ import SlotCounter from "react-slot-counter";
 
 import SectionName from "@/components/common/sectionTitle/SectionName";
 import SectionTitle from "@/components/common/sectionTitle/SectionTitle";
-import TopUpArrow from "@/components/common/icons/TopUpArrow";
 import TicketCount from "@/components/common/TicketCount";
 import WordOpacity from "@/components/common/WordOpacity";
 import SectionTitleTwo from "@/components/common/sectionTitle/SectionTitleTwo";
-
-import ticket_icon_1 from "@/assets/images/home-1/ticket-icon-1.png";
-import ticket_icon_2 from "@/assets/images/home-1/ticket-icon-2.png";
-import ticket_icon_3 from "@/assets/images/home-1/ticket-icon-3.png";
 
 const TicketOne = ({ styleNum }) => {
   const [seats, setSeats] = useState(478);
@@ -75,11 +69,11 @@ const TicketOne = ({ styleNum }) => {
             />
           )}
         </div>
+        <InsiderEmbed />
         {/* -- section-title -- */}
-        <div className="ticket-content">
+        {/* <div className="ticket-content">
           <div className="d-flex flex-column flex-xl-row gap-50 gap-xl-30 align-items-xl-center">
             <TicketCount />
-            {/* -- ticket-content-1 -- */}
 
             <div className="ticket-content-2 position-relative parallax">
               <div className="ticket-content-2-inner">
@@ -105,9 +99,6 @@ const TicketOne = ({ styleNum }) => {
                           Tickets Booked
                         </span>
                       </h2>
-                      {/* <Link href="#" className="ticket-arrow arrow-up-right">
-                        <TopUpArrow className={""} height={"32"} width={"32"} />
-                      </Link> */}
                       <div className="progress mt-50">
                         <div
                           className="progress-bar"
@@ -120,21 +111,7 @@ const TicketOne = ({ styleNum }) => {
                     <div className="p-30">
                       <div className="d-flex flex-wrap align-items-center justify-content-between justify-content-lg-start gap-lg-20 mb-5 mb-lg-60">
                         <div className="ticket-images">
-                          {/* <Image
-                            className="ticket-icon-1"
-                            src={ticket_icon_1}
-                            alt="img"
-                          />
-                          <Image
-                            className="ticket-icon-2 ms-n3"
-                            src={ticket_icon_2}
-                            alt="img"
-                          />
-                          <Image
-                            className="ticket-icon-3 ms-n3"
-                            src={ticket_icon_3}
-                            alt="img"
-                          /> */}
+                          
                         </div>
                         <h4 className="fw-normal text-white">
                           +
@@ -157,21 +134,18 @@ const TicketOne = ({ styleNum }) => {
                       <h2 className="display-6 fw-extra-bold text-uppercase text-white mb-0">
                         <span>Secure Your Spot Now</span>
                       </h2>
-                      {/* <Link href="#" className="ticket-arrow arrow-up-right">
-                        {" "}
-                        <TopUpArrow height={"32"} width={"32"} className={""} />
-                      </Link> */}
+                    
                     </div>
                   </SwiperSlide>
 
-                  {/* -- swiper-wrapper -- */}
+                  
                   <div className="ticket-swiper-pagination"></div>
                 </Swiper>
-                {/* -- ticket-swiper --	 */}
+                
               </div>
-              {/* -- ticket-content-2-inner  -- */}
+              
             </div>
-            {/* -- ticket-content-2 -- */}
+            
 
             <div className="ticket-content-3 d-flex flex-lg-column gap-3 gap-lg-4">
               <div className="brand custom-inner-bg">
@@ -217,10 +191,8 @@ const TicketOne = ({ styleNum }) => {
                 </h2>
               </div>
             </div>
-            {/* -- ticket-content-3 -- */}
           </div>
-        </div>
-        {/* -- ticket-content -- */}
+        </div> */}
       </div>
     </section>
   );
