@@ -19,6 +19,7 @@ import BlogSeven from "@/components/blogs/BlogSeven";
 
 import Banner from "@/components/heroes/Banner";
 import Head from "next/head";
+import LayoutWrapper from "@/components/common/layoutWrapper";
 
 export const metadata = {
   title: "Home",
