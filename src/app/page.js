@@ -27,15 +27,6 @@ export const metadata = {
 const Home1 = () => {
   return (
     <>
-<<<<<<< HEAD
-      <NavbarOne />
-      <BannerOne />
-      {/* <TicketOne styleNum={1} /> */}
-      <CountDown styleNum={0} />
-      <HighlightOne styleNum={0} />
-      <Award />
-      <ScrollSection />
-=======
       <Head>
         <link
           rel="apple-touch-icon"
@@ -118,7 +109,6 @@ const Home1 = () => {
       <TicketOne styleNum={5} />
       <AboutSeven styleNum={0} />
 
->>>>>>> monil/payment_module
       <LineupOne />
       <LineupSeven />
       <ScrollSection />

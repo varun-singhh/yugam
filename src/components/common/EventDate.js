@@ -65,16 +65,11 @@ const EventDate = ({ styleNum }) => {
           </div>
           <div className="col-md-3 col-xxl-2 col-xl-3 col-lg-3">
             <div>
-<<<<<<< HEAD
-              <ButtonCustom className={buttonClass} link={"#pricing"}>
-                Buy Tickets
-=======
               <ButtonCustom className={buttonClass} link={"#ticket"}>
                 <span className="contact-plus-icon">
                   <ContactPlusIcon />
                 </span>
                 Interested
->>>>>>> monil/payment_module
               </ButtonCustom>
             </div>
           </div>
