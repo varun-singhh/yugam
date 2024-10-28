@@ -30,7 +30,7 @@ const EventDate = ({ styleNum }) => {
   // ----- Change classname define in home page
 
   return (
-    <div className={`event-info custom-inner-bg ${prentClass}`}>
+    <div className={`event-info custom-inner-bg`}>
       <div className="event-inner">
         <div className="row align-items-center justify-content-between gy-xl-0 gy-4">
           <div className="col-md-4 col-xl-3 col-lg-4">

@@ -11,7 +11,7 @@ import SectionTitleTwo from "@/components/common/sectionTitle/SectionTitleTwo";
 
 import ellipse_1 from "@/assets/images/home-1/ellipse-1.png";
 import ellipse_2 from "@/assets/images/home-1/ellipse-2.png";
-import schedule_img from "@/assets/images/home-1/lineup-image-6.jpg";
+import schedule_img from "@/assets/images/home-1/hero-22.jpg";
 import { scheduleData } from "@/lib/scheduleData";
 
 const ScheduleSeven = ({ styleNum }) => {

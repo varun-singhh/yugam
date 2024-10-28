@@ -9,10 +9,12 @@ const Banner = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const backgrounds = [
-    "/images/hero-101.jpg",
+    "/images/hero-01.jpg",
+    "/images/hero-4.jpg",
+    "/images/hero-22.jpg",
+    "/images/hero-1.jpg",
     "/images/hero-102.jpg",
     "/images/hero-5-bg.jpg",
-    "/images/hero-4.jpg",
   ];
 
   const goToSlide = (index) => {
@@ -81,10 +83,11 @@ const Banner = () => {
         >
           <div className="container">
             <div className="hero-inner-text position-relative text-left pt-5">
+              <BannerSponsor parentClass="mb-50 mb-xxl-50 hero-brand-images" />
               <h1 className="soundscapes no-stroke fs-120 fw-extra-bold mt-36 mb-0 wow slideInUp">
                 YUGAM 2024
               </h1>
-              <BannerSponsor parentClass="mb-30 mb-xxl-50 hero-brand-images" />
+
               <EventDate styleNum={2} />
             </div>
           </div>
