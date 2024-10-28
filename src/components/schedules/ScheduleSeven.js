@@ -11,7 +11,7 @@ import SectionTitleTwo from "@/components/common/sectionTitle/SectionTitleTwo";
 
 import ellipse_1 from "@/assets/images/home-1/ellipse-1.png";
 import ellipse_2 from "@/assets/images/home-1/ellipse-2.png";
-import schedule_img from "@/assets/images/home-1/schedule-image.png";
+import schedule_img from "@/assets/images/home-1/lineup-image-6.jpg";
 import { scheduleData } from "@/lib/scheduleData";
 
 const ScheduleSeven = ({ styleNum }) => {
@@ -49,7 +49,7 @@ const ScheduleSeven = ({ styleNum }) => {
                 <div className="section-title section-title-style-2 mb-30 mb-lg-40 mb-xxl-60">
                   <SectionName name={"Schedule"} className={""} />
                   <SectionTitleTwo
-                    title={"Melody"}
+                    title={"Yugam"}
                     subTitle={"Agenda"}
                     titleClass={""}
                     subTitleClass={"primary-text-shadow"}
@@ -58,24 +58,10 @@ const ScheduleSeven = ({ styleNum }) => {
                 {/* -- section-title -- */}
                 <SectionDesc
                   desc={
-                    "Captivating performances, interactive workshops, and delightful culinary delights await you at Yugam Music Festival. Let the melodies transcend boundaries on this unforgettable musical journey."
+                    "Kick off with the grand inauguration, enjoy captivating performances by Rahgir and Iqlipse Nova, celebrate cultural heritage, and dance the night away with DJ Aerreo. Farewell with fireworks!"
                   }
                   className={sectionDescClass}
                 />
-
-                <div className="pt-4 pt-lg-30">
-                  <Link
-                    href="#"
-                    className="download-link d-flex align-items-center gap-40"
-                    aria-label="buttons"
-                  >
-                    Download Agenda{" "}
-                    <span className="ticket-arrow arrow-down-right">
-                      {" "}
-                      <DownRightArrow />{" "}
-                    </span>{" "}
-                  </Link>
-                </div>
 
                 {isLeftContentImg && (
                   <div className="mt-10 mt-lg-40">

@@ -124,7 +124,9 @@ const SubscriptionOne = ({ styleNum }) => {
                 >
                   <SectionName
                     name={` ${
-                      sectionName ? "Schedule" : "Join the Harmonious Beat"
+                      sectionName
+                        ? "Schedule"
+                        : "Join the Avighna's News Letter"
                     } `}
                     className={""}
                   />
@@ -147,7 +149,7 @@ const SubscriptionOne = ({ styleNum }) => {
                 {/* -- section-title -- */}
                 <SectionDesc
                   desc={
-                    "Become Part of Our Harmonious Community and Receive Exclusive Updates, Special Offers, and Exciting News about the Festival Straight to Your Inbox."
+                    "Become Part of Our Avighna's Community and Receive Exclusive Updates, Special Offers, and Exciting News about the Festival Straight to Your Inbox."
                   }
                   className={sectionDescClass}
                 />
@@ -174,7 +176,7 @@ const SubscriptionOne = ({ styleNum }) => {
             <div className="col-lg-5 wow fadeInLeft">
               <h3 className="straight-line-wrapper fw-semibold position-relative mb-20">
                 {" "}
-                <span className="straight-line"></span>Yugam Wayfinder
+                <span className="straight-line"></span>Yugam 2024 Wayfinder
               </h3>
               <div className="map-image parallax position-relative">
                 <span className={`map-marker ${markerClr}`}>
@@ -191,9 +193,10 @@ const SubscriptionOne = ({ styleNum }) => {
                 </span>
 
                 <div className="map-popup-content">
-                  <h3 className={`${addressClassName}`}>Basement</h3>
+                  <h3 className={`${addressClassName}`}>8XJW+8R8</h3>
                   <p className={`${addressClass}`}>
-                    135W, 46nd Street, New York
+                    Sampurna Nand Sanskrit University, Jagatganj, Chaukaghat,
+                    Varanasi
                   </p>
                   <Link
                     onClick={() => seEl(true)}

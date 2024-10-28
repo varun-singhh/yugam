@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import Razorpay from "razorpay";
-import shortid from "shortid";
 import crypto from "crypto";
 import nodemailer from "nodemailer";
 
@@ -13,11 +12,28 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+// Function to get ticket description based on ticket ID
+function getTicketDescription(activeTicket) {
+  switch (activeTicket) {
+    case "ticket-form-1":
+      return "Full Day Pass";
+    case "ticket-form-2":
+      return "Day 1 Pass";
+    case "ticket-form-3":
+      return "Day 2 Pass";
+    default:
+      return "Error occurred";
+  }
+}
+
 async function sendConfirmationEmail(paymentDetails) {
+  const ticketType = getTicketDescription(paymentDetails.activeTicket);
+
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: paymentDetails.email,
-    subject: "Payment Confirmation Eventiva",
+    cc: "solomonsalfie73@gmail.com", //enter mail of admin/management
+    subject: "Payment Confirmation Yugam",
     html: `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
       <!-- Header -->
@@ -33,6 +49,7 @@ async function sendConfirmationEmail(paymentDetails) {
           <p style="margin-bottom: 0;">Thank you for your reservation at Yugam 2024.</p>
         </div>
 
+<<<<<<< HEAD
         <!-- Payment Details -->
         <div style="background-color: white; padding: 20px; border-radius: 4px; margin-bottom: 20px;">
           <h3 style="color: #333; margin-top: 0;">Payment Details</h3>
@@ -80,6 +97,57 @@ async function sendConfirmationEmail(paymentDetails) {
         </div>
 
         <!-- Barcode Section -->
+=======
+                <!-- Payment Details -->
+                <div style="background-color: white; padding: 20px; border-radius: 4px; margin-bottom: 20px;">
+                    <h3 style="color: #333; margin-top: 0;">Payment Details</h3>
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr>
+                            <td style="padding: 8px 0;"><strong>Amount Paid:</strong></td>
+                            <td style="padding: 8px 0; color: #28a745; font-size: 18px; font-weight: bold;">₹${
+                              paymentDetails.amount / 100
+                            }</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px 0;"><strong>Payment ID:</strong></td>
+                            <td style="padding: 8px 0;">${
+                              paymentDetails.razorpay_payment_id
+                            }</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px 0;"><strong>Order ID:</strong></td>
+                            <td style="padding: 8px 0;"> ${
+                              paymentDetails.razorpay_order_id
+                            }</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px 0;"><strong>Payment Method:</strong></td>
+                            <td style="padding: 8px 0;">${
+                              paymentDetails.method.charAt(0).toUpperCase() +
+                              paymentDetails.method.slice(1)
+                            } </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px 0;"><strong>Date:</strong></td>
+                            <td style="padding: 8px 0;">${new Date(
+                              paymentDetails.created_at * 1000
+                            ).toLocaleDateString()}</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px 0;"><strong>Ticket Type:</strong></td>
+                            <td style="padding: 8px 0;">${ticketType}</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px 0;"><strong>Quantity:</strong></td>
+                            <td style="padding: 8px 0;">${
+                              paymentDetails.count
+                            }</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Barcode Section -->
+>>>>>>> monil/payment_module
         <div style="background-color: white; padding: 20px; border-radius: 4px; margin-bottom: 20px; text-align: center;">
           <h3 style="color: #333; margin-top: 0;">Your Ticket</h3>
           <p style="margin: 5px 0;">Please present this ticket at the entry to get the event wristband for access.</p>
@@ -87,6 +155,20 @@ async function sendConfirmationEmail(paymentDetails) {
             paymentDetails.razorpay_payment_id
           }&code=Code128&dpi=96" alt="Barcode" style="margin-top: 20px;" />
         </div>
+<<<<<<< HEAD
+=======
+
+                <!-- Contact Info -->
+                <div style="background-color: white; padding: 20px; border-radius: 4px;">
+                    <h3 style="color: #333; margin-top: 0;">Customer Information</h3>
+                    <p style="margin: 5px 0;"><strong>Email:</strong> ${
+                      paymentDetails.email
+                    }</p>
+                    <p style="margin: 5px 0;"><strong>Contact:</strong> ${
+                      paymentDetails.contact
+                    }</p>
+                </div>
+>>>>>>> monil/payment_module
 
         <!-- Customer Info -->
         <div style="background-color: white; padding: 20px; border-radius: 4px;">
@@ -99,6 +181,7 @@ async function sendConfirmationEmail(paymentDetails) {
           }</p>
         </div>
 
+<<<<<<< HEAD
         <!-- Support Message -->
         <div style="text-align: center; margin-top: 20px;">
           <p style="color: #666;">If you have any questions about your payment, please contact our support team.</p>
@@ -112,6 +195,14 @@ async function sendConfirmationEmail(paymentDetails) {
       </div>
     </div>
   `,
+=======
+            <!-- Footer -->
+            <div style="background-color: #343a40; color: white; text-align: center; padding: 15px; font-size: 12px;">
+                <p style="margin: 5px 0;">© 2024 Avighna Events. All rights reserved.</p>
+                <p style="margin: 5px 0;">This is an automated email, please do not reply.</p>
+            </div>
+        </div>`,
+>>>>>>> monil/payment_module
   };
 
   try {
@@ -132,8 +223,13 @@ const instance = new Razorpay({
 });
 
 export async function POST(req, res) {
-  const { razorpay_order_id, razorpay_payment_id, razorpay_signature } =
-    await req.json();
+  const {
+    razorpay_order_id,
+    razorpay_payment_id,
+    razorpay_signature,
+    count,
+    activeTicket,
+  } = await req.json();
 
   const paymentDetails = await fetch(
     `https://api.razorpay.com/v1/payments/${razorpay_payment_id}`,
@@ -147,7 +243,7 @@ export async function POST(req, res) {
   ).then((res) => res.json());
 
   // Verify payment and process with email and contact
-  console.log(paymentDetails);
+  // console.log(paymentDetails);
 
   const email = paymentDetails.email;
   const contact = paymentDetails.contact;
@@ -166,8 +262,8 @@ export async function POST(req, res) {
   const isAuthentic = expectedSignature === razorpay_signature;
 
   if (isAuthentic) {
-    console.log("Payment successfully verified");
-    console.log("email and contact=" + email + " " + contact);
+    // console.log("Payment successfully verified");
+    // console.log("email and contact=" + email + " " + contact);
   } else {
     return NextResponse.json(
       {
@@ -181,7 +277,7 @@ export async function POST(req, res) {
 
   // Send confirmation email
   const emailSent = await sendConfirmationEmail({
-    name: "Monil",
+    name: "",
     email: email,
     amount: amount,
     created_at: created_at,
@@ -189,6 +285,8 @@ export async function POST(req, res) {
     contact: contact,
     razorpay_payment_id,
     razorpay_order_id,
+    count,
+    activeTicket,
   });
   return NextResponse.json(
     {

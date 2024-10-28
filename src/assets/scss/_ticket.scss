@@ -201,7 +201,7 @@
     }
 
     &::before {
-      content: "73% filled";
+      content: "27% filled";
       position: absolute;
       top: 17px;
       left: 30px;
@@ -212,7 +212,7 @@
     }
 
     &::after {
-      content: "27%";
+      content: "100%";
       position: absolute;
       top: 17px;
       right: 10px;

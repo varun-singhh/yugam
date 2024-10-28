@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -24,6 +24,7 @@ import ticket_icon_2 from "@/assets/images/home-1/ticket-icon-2.png";
 import ticket_icon_3 from "@/assets/images/home-1/ticket-icon-3.png";
 
 const TicketOne = ({ styleNum }) => {
+  const [seats, setSeats] = useState(478);
   // styleNum 1 from home page 1
   // styleNum 5 from home page 5
   // styleNum 7 from home page 7
@@ -97,10 +98,29 @@ const TicketOne = ({ styleNum }) => {
                   modules={[Pagination, Autoplay]}
                 >
                   <SwiperSlide className="swiper-slide">
+                    <div className="py-4 ps-30 pe-20">
+                      <h2 className="mb-0 d-flex gap-2 gap-lg-3 align-items-center text-white">
+                        <span className="fs-100 fw-extra-bold">{seats}</span>
+                        <span className="fw-extra-bold fs-1">
+                          Tickets Booked
+                        </span>
+                      </h2>
+                      {/* <Link href="#" className="ticket-arrow arrow-up-right">
+                        <TopUpArrow className={""} height={"32"} width={"32"} />
+                      </Link> */}
+                      <div className="progress mt-50">
+                        <div
+                          className="progress-bar"
+                          style={{ width: "100%" }}
+                        ></div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="swiper-slide">
                     <div className="p-30">
                       <div className="d-flex flex-wrap align-items-center justify-content-between justify-content-lg-start gap-lg-20 mb-5 mb-lg-60">
                         <div className="ticket-images">
-                          <Image
+                          {/* <Image
                             className="ticket-icon-1"
                             src={ticket_icon_1}
                             alt="img"
@@ -114,7 +134,7 @@ const TicketOne = ({ styleNum }) => {
                             className="ticket-icon-3 ms-n3"
                             src={ticket_icon_3}
                             alt="img"
-                          />
+                          /> */}
                         </div>
                         <h4 className="fw-normal text-white">
                           +
@@ -122,7 +142,7 @@ const TicketOne = ({ styleNum }) => {
                             {" "}
                             <SlotCounter
                               startValue={0}
-                              value={352}
+                              value={seats}
                               debounceDelay={5000}
                               duration={2}
                               animateOnVisible={{
@@ -137,30 +157,10 @@ const TicketOne = ({ styleNum }) => {
                       <h2 className="display-6 fw-extra-bold text-uppercase text-white mb-0">
                         <span>Secure Your Spot Now</span>
                       </h2>
-                      <Link href="#" className="ticket-arrow arrow-up-right">
+                      {/* <Link href="#" className="ticket-arrow arrow-up-right">
                         {" "}
                         <TopUpArrow height={"32"} width={"32"} className={""} />
-                      </Link>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide className="swiper-slide">
-                    <div className="py-4 ps-30 pe-20">
-                      <h2 className="mb-0 d-flex gap-2 gap-lg-3 align-items-center text-white">
-                        <span className="fs-100 fw-extra-bold">248</span>
-                        <span className="fw-extra-bold fs-1">
-                          Seats Available
-                        </span>
-                      </h2>
-                      <Link href="#" className="ticket-arrow arrow-up-right">
-                        <TopUpArrow className={""} height={"32"} width={"32"} />
-                      </Link>
-                      <div className="progress mt-50">
-                        <div
-                          className="progress-bar"
-                          style={{ width: "73%" }}
-                        ></div>
-                      </div>
+                      </Link> */}
                     </div>
                   </SwiperSlide>
 
@@ -179,7 +179,7 @@ const TicketOne = ({ styleNum }) => {
                   <span className="odometer">
                     <SlotCounter
                       startValue={0}
-                      value={20}
+                      value={10}
                       debounceDelay={5000}
                       duration={2}
                       animateOnVisible={{
@@ -200,7 +200,7 @@ const TicketOne = ({ styleNum }) => {
                   <span className="odometer">
                     <SlotCounter
                       startValue={0}
-                      value={100}
+                      value={10}
                       debounceDelay={5000}
                       duration={2}
                       animateOnVisible={{
@@ -213,7 +213,7 @@ const TicketOne = ({ styleNum }) => {
                 </h2>
                 <h2 className="fs-1 fw-light mb-0 text-opacity">
                   {" "}
-                  <WordOpacity paragraph={"Artworks"} />
+                  <WordOpacity paragraph={"Artists"} />
                 </h2>
               </div>
             </div>

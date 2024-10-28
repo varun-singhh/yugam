@@ -1,12 +1,14 @@
 import React from "react";
 import Success from "./Success";
-// import Sample from "./sample";
 
+export const metadata = {
+  title: "Payment Success",
+  description: "Payment Success page",
+};
 export default function page() {
   return (
     <>
       <Success />
-      {/* <Sample /> */}
     </>
   );
 }

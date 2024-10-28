@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import RoundText from "@/components/common/RoundText";
 import VideoIcon from "@/components/common/icons/VideoIcon";
-import about_img from "@/assets/images/home-1/about-image-1.jpg";
+import about_img from "@/assets/images/hero-5-bg.jpg";
 import ellipse_1 from "@/assets/images/home-1/ellipse-1.png";
 import EvModal from "../EvModal";
 
@@ -57,7 +57,7 @@ const AboutCard = () => {
           setModalIsOpen={setModalIsOpen}
           currentId={currentId}
           type={type}
-          url={"https://www.youtube.com/embed/0O2aH4XLbto"}
+          url={"https://www.instagram.com/yugam.live/reel/DBA4g4atz6x/"}
         />
       )}
     </>

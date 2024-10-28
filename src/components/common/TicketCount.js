@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TicketIcon from "@/components/common/icons/TicketIcon";
 import DashIcon from "@/components/common/icons/DashIcon";
 import PlusIcon from "@/components/common/icons/PlusIcon";
@@ -10,6 +10,29 @@ import { ticketTypeList } from "@/lib/ticketTypeList";
 const TicketCount = () => {
   const [ticketCount, setTicketCount] = useState(1);
   const [activeTicket, setActiveTicket] = useState("ticket-form-1");
+  const [selectedPrice, setSelectedPrice] = useState(0);
+  // const [price, setPrice] = useState(0);
+
+  // Set initial price when component mounts
+  useEffect(() => {
+    // Find the initial ticket price from ticketTypeList
+    const initialTicket = ticketTypeList.find(
+      (ticket) => ticket.id === activeTicket
+    );
+    if (initialTicket) {
+      setSelectedPrice(initialTicket.price);
+    }
+  }, []);
+
+  // Update price when active ticket changes
+  useEffect(() => {
+    const selectedTicket = ticketTypeList.find(
+      (ticket) => ticket.id === activeTicket
+    );
+    if (selectedTicket) {
+      setSelectedPrice(selectedTicket.price);
+    }
+  }, [activeTicket]);
 
   // function for increment and decrement ticket counter
   const handleTicketCount = (action) => {
@@ -24,6 +47,8 @@ const TicketCount = () => {
       setTicketCount(ticketCount - 1);
     }
   };
+
+  const totalAmount = selectedPrice * ticketCount;
 
   return (
     <div className="ticket-content-1">
@@ -43,7 +68,7 @@ const TicketCount = () => {
       {/* -- ticket-form-wrapper --*/}
 
       <p className="extra-small fw-semibold d-flex justify-content-lg-end">
-        Sales close: Sat, Nov 6th, 8:00 AM (IST).
+        Sales close: Sat, Nov 16th, 10:00 AM (IST).
       </p>
       <div className="d-flex gap-3 justify-content-between">
         <div className="ticket-amounts d-flex align-items-center gap-0 gap-lg-3">
@@ -71,8 +96,10 @@ const TicketCount = () => {
         <div className="text-lg-end">
           <ButtonCustom
             className={"btn-gradient gap-2"}
-            link={"#"}
             count={ticketCount}
+            activeTicket={activeTicket}
+            price={selectedPrice}
+            amount={totalAmount}
           >
             <TicketIcon height={"25"} width={"25"} />
             Buy Ticket

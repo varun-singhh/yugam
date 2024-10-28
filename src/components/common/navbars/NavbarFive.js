@@ -9,8 +9,8 @@ import useStickyHeader from "@/hooks/useStickyHeader";
 import NavbarOffcanvas from "@/components/common/navbars/NavbarOffcanvas";
 import useHoverDropdown from "@/hooks/useHoverDropdown";
 
-import logo from "@/assets/images/global/logo.png";
-import logo_dark from "@/assets/images/global/logo-dark.png";
+import logo from "@/assets/images/global/logo-dark-yugam.png";
+import logo_dark from "@/assets/images/global/logo-dark-yugam.png";
 import { menuList } from "@/lib/menuList";
 
 const NavbarFive = () => {
@@ -28,14 +28,9 @@ const NavbarFive = () => {
                   src={logo}
                   className="logo-light"
                   alt="logo"
-                  width={10}
+                  width="200"
                 />
-                <Image
-                  src={logo_dark}
-                  className="logo-dark"
-                  alt="logo"
-                  width={10}
-                />
+                <Image src={logo_dark} className="logo-dark" alt="logo" />
               </Link>
               <button
                 className="navbar-toggler"
@@ -101,9 +96,9 @@ const NavbarFive = () => {
                       );
                     })}
                   </ul>
-                  <ButtonFill className={"gap-2"} link={"#"}>
+                  <ButtonFill className={"gap-2"} link={"/#ticket"}>
                     <TicketIcon height={"25"} width={"25"} />
-                    Buy Ticket
+                    Get Ticket
                   </ButtonFill>
                 </div>
               </div>

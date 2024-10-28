@@ -14,7 +14,10 @@ import { blogData2 } from "@/lib/blogData2";
 
 const BlogSeven = () => {
   return (
-    <section className="blog-section blog-horizontal pt-3 pb-50 pb-lg-80 pb-xxl-100">
+    <section
+      className="blog-section blog-horizontal pt-3 pb-50 pb-lg-80 pb-xxl-100"
+      id="yugam-headline"
+    >
       <div className="container">
         <div className="row gy-4 gy-lg-0 align-items-lg-end justify-content-lg-between mb-30 mb-lg-70">
           <div className="col-lg-4">

@@ -7,7 +7,7 @@ import MapRouting from "./MapRouting";
 // import Routing from './leafletRouting'
 
 const LeafletMap = ({ el }) => {
-  const locationLatLng = [30.415075, -86.658633];
+  const locationLatLng = [25.33031, 82.99627];
   return (
     <MapContainer
       center={locationLatLng}

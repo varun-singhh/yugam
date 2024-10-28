@@ -10,7 +10,7 @@ const razorpay = new Razorpay({
 
 export async function POST(req) {
   const { amount } = await req.json();
-  console.log("amount=", amount);
+  // console.log("amount=", amount);
 
   const options = {
     amount: amount * 100, // Amount in paisa
@@ -24,7 +24,7 @@ export async function POST(req) {
 
   try {
     const response = await razorpay.orders.create(options);
-    console.log("def=", response);
+    // console.log("def=", response);
 
     return NextResponse.json(
       {

@@ -1,15 +1,14 @@
-import React from 'react'
-import NavbarSix from '@/components/common/navbars/NavbarSix'
-import FooterThree from '@/components/common/footers/FooterThree'
-
+import React from "react";
+import FooterOne from "@/components/common/footers/FooterOne";
+import NavbarFive from "@/components/common/navbars/NavbarFive";
 const Layout = ({ children }) => {
-    return (
-        <>
-            <NavbarSix />
-            {children}
-            <FooterThree styleNum={7}  />
-        </>
-    )
-}
+  return (
+    <>
+      <NavbarFive />
+      {children}
+      <FooterOne />
+    </>
+  );
+};
 
-export default Layout
+export default Layout;

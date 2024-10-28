@@ -6,11 +6,10 @@ import HighlightTwo from "@/components/highlights/HighlightTwo";
 import EventCounterTwo from "@/components/common/eventCounter/EventCounterTwo";
 import TicketTwo from "@/components/tickets/TicketTwo";
 import Direction from "@/components/direction/Direction";
-import SubscriptionTwo from "@/components/subscriptions/SubscriptionTwo";
 
 export const metadata = {
-  title: "yugam next.js - Venue",
-  description: "yugam next.js multipage webdite with next.js and bootstrap",
+  title: "Venue",
+  description: "Venue of event",
 };
 
 const Venue = () => {
@@ -18,12 +17,11 @@ const Venue = () => {
     <>
       <PageHeader currentPage={"Venue"} banner={"banner-1 banner-3"} />
       <AboutTwo />
-      <ConferenceHall />
+      {/* <ConferenceHall /> */}
       <HighlightTwo />
       <EventCounterTwo />
       <TicketTwo />
       <Direction styleNum={0} />
-      <SubscriptionTwo styleNum={0} />
     </>
   );
 };

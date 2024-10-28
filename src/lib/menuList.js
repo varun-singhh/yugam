@@ -2,6 +2,7 @@ export const menuList = [
   {
     id: "01",
     name: "Home",
+<<<<<<< HEAD
     path: "/home-1/",
     isDropdown: [
       {
@@ -10,6 +11,10 @@ export const menuList = [
         path: "/home-5/",
       },
     ],
+=======
+    path: "/",
+    isDropdown: false,
+>>>>>>> monil/payment_module
   },
   {
     id: "02",
@@ -23,6 +28,7 @@ export const menuList = [
     path: "/venue/",
     isDropdown: false,
   },
+<<<<<<< HEAD
   //   {
   //     id: "04",
   //     name: "BLOG",
@@ -52,6 +58,11 @@ export const menuList = [
   //   },
   {
     id: "05",
+=======
+
+  {
+    id: "04",
+>>>>>>> monil/payment_module
     name: "CONTACT US",
     path: "/contact-us/",
     isDropdown: false,
