@@ -84,11 +84,13 @@ const Banner = () => {
               <h1 className="soundscapes no-stroke fs-120 fw-extra-bold mt-36 mb-0 wow slideInUp">
                 YUGAM 2024
               </h1>
-
-              <BannerSponsor parentClass="mb-xxl-50 hero-brand-images" />
+              <h6 className="text-white fs-4 mt-4">
+                Unveil the Magic of Soundscapes
+              </h6>
+              <BannerSponsor parentClass="mb-30 mb-xxl-50 hero-brand-images" />
+              <EventDate styleNum={2} />
             </div>
           </div>
-          <EventDate styleNum={2} />
         </div>
       </div>
 
@@ -146,6 +148,16 @@ const Banner = () => {
       </button>
 
       <style jsx>{`
+        .mobile-spacing {
+          display: flex;
+          flex-direction: column;
+          align-items: left;
+        }
+
+        .mobile-sponsor {
+          margin-bottom: 0 !important;
+        }
+
         @media (max-width: 1400px) {
           .hero-wrapper {
             padding: 150px 0 60px 0 !important;
@@ -165,10 +177,43 @@ const Banner = () => {
         @media (max-width: 768px) {
           .hero-wrapper {
             max-width: 100%;
-            padding: 75px 0 40px 0 !important;
+            padding: 120px 0 20px 0 !important;
           }
-          .event-info {
-            margin-top: 0;
+          .hero-inner-text {
+            padding-top: 3rem !important;
+          }
+          .mobile-spacing {
+            margin-top: 1rem;
+            gap: 1rem;
+          }
+          .mobile-sponsor {
+            padding-bottom: 0 !important;
+            margin-bottom: 0 !important;
+          }
+          :global(.event-info) {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+          }
+          :global(.hero-brand-images) {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+          }
+          :global(.mb-30) {
+            margin-bottom: 0 !important;
+          }
+          :global(.mb-xxl-50) {
+            margin-bottom: 0 !important;
+          }
+        }
+        @media (max-width: 576px) {
+          .hero-wrapper {
+            padding: 140px 0 20px 0 !important;
+          }
+          .hero-inner-text {
+            padding-top: 4rem !important;
+          }
+          .mobile-spacing {
+            gap: 0.5rem;
           }
         }
       `}</style>

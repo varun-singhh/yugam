@@ -27,10 +27,15 @@ const NavbarFive = () => {
                 <Image
                   src={logo}
                   className="logo-light"
-                  alt="logo"
+                  alt="logo-light"
                   width="200"
                 />
-                <Image src={logo_dark} className="logo-dark" alt="logo" />
+                <Image
+                  src={logo_dark}
+                  className="logo-dark"
+                  alt="logo-dark"
+                  width="200"
+                />
               </Link>
               <button
                 className="navbar-toggler"
