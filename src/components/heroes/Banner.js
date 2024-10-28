@@ -84,9 +84,6 @@ const Banner = () => {
               <h1 className="soundscapes no-stroke fs-120 fw-extra-bold mt-36 mb-0 wow slideInUp">
                 YUGAM 2024
               </h1>
-              <h6 className="text-white fs-4 mt-4">
-                Unveil the Magic of Soundscapes
-              </h6>
               <BannerSponsor parentClass="mb-30 mb-xxl-50 hero-brand-images" />
               <EventDate styleNum={2} />
             </div>

@@ -1,7 +1,7 @@
 import lineup_image_1 from "@/assets/images/home-1/lineup-kathak.jpg";
 import lineup_image_2 from "@/assets/images/home-1/lineup-music.jpeg";
 import lineup_image_3 from "@/assets/images/home-1/lineup-ramp.webp";
-import lineup_image_4 from "@/assets/images/home-1/lineup-rahgir.jpg";
+import lineup_image_4 from "@/assets/images/home-1/lineup-image-2.jpg";
 import lineup_image_5 from "@/assets/images/home-1/lineup-nova.jpg";
 import lineup_image_6 from "@/assets/images/home-1/lineup-aerreo.jpg";
 
@@ -82,7 +82,7 @@ export const singerData = [
   },
   {
     id: 6,
-    name: "DJ Aerreo",
+    name: "Aerreo",
     genere: "Techno",
     img: lineup_image_6,
     socil_link: [
