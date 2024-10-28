@@ -8,29 +8,37 @@ const InsiderEmbed = () => {
       "https://insider.in/scripts/insider-embed/dist/scripts/insider_embed.min.js";
     script.async = true;
 
+    // Flag to check if insiderEmbed has been initialized
+    let initialized = false;
+
     // Append the script to the body
     document.body.appendChild(script);
 
     // Initialize the insiderEmbed after the script loads
     script.onload = () => {
-      window.insiderEmbed.init({
-        mountId: "insider-embed",
-        eventSlug: "yugam-2024-nov17-2024",
-        frameHeight: 100,
-        merchantId: "671fe652dfe3d85660a30eea",
-      });
+      if (!initialized && window.insiderEmbed) {
+        window.insiderEmbed.init({
+          mountId: "insider-embed",
+          eventSlug: "yugam-2024-nov17-2024",
+          frameHeight: 400,
+          merchantId: "671fe652dfe3d85660a30eea",
+        });
+        initialized = true; // Set the flag to true to prevent re-initialization
+      }
     };
 
     // Cleanup function to remove the script when the component unmounts
     return () => {
       document.body.removeChild(script);
+      initialized = false; // Reset the flag on cleanup
     };
   }, []);
 
   return (
-    <div id="insider-embed" style={{ position: "relative", height: "900px" }}>
-      {/* The embed will load here */}
-    </div>
+    <div
+      id="insider-embed"
+      style={{ position: "relative", height: "900px" }}
+    ></div>
   );
 };
 

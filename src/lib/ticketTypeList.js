@@ -14,13 +14,13 @@ export const ticketTypeList = [
   {
     id: "ticket-form-3",
     type: "Full Event Pass (Diwali offer)",
-    price: "1199",
+    price: "1499",
     value: "option3",
   },
   {
     id: "ticket-form-4",
     type: " VIP Pass (Fanpit)",
-    price: "1899",
+    price: "1999",
     value: "option4",
   },
 ];
