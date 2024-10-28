@@ -18,7 +18,9 @@ const TicketTwo = () => {
 
             <ButtonCustom
               className={"gap-2 mt-4 mt-lg-40 btn-gradient"}
-              link={"/#ticket"}
+              link={
+                "https://insider.in/event/yugam-2024-nov17-2024/buy-page/shows/671f836cef01e9b26e2c681e/Tickets"
+              }
             >
               <TicketIcon />
               Get Ticket

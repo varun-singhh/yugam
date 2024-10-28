@@ -22,7 +22,9 @@ const AboutOne = () => {
               </h1>
               <ButtonCustom
                 className={"gap-2 btn-gradient mt-4 mt-lg-40 mt-xxl-60"}
-                link={"/#ticket"}
+                link={
+                  "https://insider.in/event/yugam-2024-nov17-2024/buy-page/shows/671f836cef01e9b26e2c681e/Tickets"
+                }
               >
                 <TicketIcon height={"25"} width={"25"} />
                 Get Ticket

@@ -91,7 +91,10 @@ const Cta = ({ styleNum }) => {
             </div>
             <div className="col-lg-4">
               <div className="cta-icon d-none d-lg-block ms-xl-70 ms-xxl-100">
-                <Link href="#ticket" aria-label="icons">
+                <Link
+                  href="https://insider.in/event/yugam-2024-nov17-2024/buy-page"
+                  aria-label="icons"
+                >
                   <ArrowTopRightBig iconClr={iconClr} />
                 </Link>
               </div>

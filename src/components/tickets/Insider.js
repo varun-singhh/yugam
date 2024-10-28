@@ -20,7 +20,7 @@ const InsiderEmbed = () => {
         window.insiderEmbed.init({
           mountId: "insider-embed",
           eventSlug: "yugam-2024-nov17-2024",
-          frameHeight: 400,
+          frameHeight: 550,
           merchantId: "671fe652dfe3d85660a30eea",
         });
         initialized = true; // Set the flag to true to prevent re-initialization

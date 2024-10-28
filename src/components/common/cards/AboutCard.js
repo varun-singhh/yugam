@@ -32,12 +32,6 @@ const AboutCard = () => {
             className="video-popup video-popup-center position-absolute video-popup-link"
           >
             <div className="circle-wrapper">
-              <div className="circle-bg"></div>
-              <span className="inner-circle video-icon">
-                <span className="">
-                  <VideoIcon height={"30"} width={"30"} />
-                </span>
-              </span>
               <div className="rotate-text2 text-uppercase">
                 <RoundText
                   style={""}

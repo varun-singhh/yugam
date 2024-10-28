@@ -65,7 +65,10 @@ const EventDate = ({ styleNum }) => {
           </div>
           <div className="col-md-3 col-xxl-2 col-xl-3 col-lg-3">
             <div>
-              <ButtonCustom className={buttonClass} link={"#ticket"}>
+              <ButtonCustom
+                className={buttonClass}
+                link={"https://insider.in/event/yugam-2024-nov17-2024/buy-page"}
+              >
                 <span className="contact-plus-icon">
                   <ContactPlusIcon />
                 </span>

@@ -86,9 +86,9 @@ const Award = () => {
                 <div className="circle-wrapper">
                   <div className="circle-bg"></div>
                   <span className="inner-circle video-icon">
-                    <span className="">
+                    {/* <span className="">
                       <VideoIcon height={"30"} width={"30"} />
-                    </span>
+                    </span> */}
                   </span>
                   {/*  */}
                   <div className="rotate-text3 text-uppercase">

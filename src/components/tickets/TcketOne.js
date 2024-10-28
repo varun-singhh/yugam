@@ -2,6 +2,10 @@
 import React, { useState } from "react";
 
 import InsiderEmbed from "./Insider";
+import Link from "next/link";
+import Image from "next/image";
+
+import brand_2 from "@/assets/images/paytm.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { Autoplay } from "swiper/modules";
@@ -55,20 +59,35 @@ const TicketOne = ({ styleNum }) => {
           <SectionName name={"Ticket"} className={""} />
           {subTitle2 ? (
             <SectionTitleTwo
-              title={"Yugam"}
-              subTitle={"Admission"}
+              title={"Yugam 2024"}
+              subTitle={"Book Tickets Now on"}
               titleClass={""}
               subTitleClass={"primary-text-shadow"}
             />
           ) : (
             <SectionTitle
-              title={"Yugam"}
-              subTitle={"Admission"}
+              title={"Yugam2024"}
+              subTitle={"Book Tickets Now on"}
               titleClass={""}
               subTitleClass={subTitleClass}
             />
           )}
         </div>
+
+        <div className="d-flex flex-md-wrap align-items-center gap-20 gap-md-5 gap-lg-50">
+          {/* <Link href="#" aria-label="brand-image">
+          <Image src={brand_3} className="img-fluid" alt="img" width={80} />
+        </Link> */}
+          <Link
+            href="https://insider.in/yugam-2024-nov17-2024/event"
+            aria-label="brand-image"
+          >
+            <Image src={brand_2} className="img-fluid" alt="img" width={400} />
+          </Link>
+        </div>
+        <br />
+        <br />
+        <br />
         <InsiderEmbed />
         {/* -- section-title -- */}
         {/* <div className="ticket-content">
