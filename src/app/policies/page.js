@@ -1,10 +1,6 @@
 import React from "react";
 import PageHeader from "@/components/common/PageHeader";
-import About1 from "@/components/about/AboutOne";
-
-import Ticket1 from "@/components/tickets/TicketTwo";
 import Direction from "@/components/direction/Direction";
-import Contact from "@/components/contact/Contact";
 import Policies from "@/components/policies/policies";
 
 export const metadata = {
@@ -14,12 +10,9 @@ export const metadata = {
 const ContactUs = () => {
   return (
     <>
-      <PageHeader currentPage={"Contact us"} banner={"banner-1 banner-2"} />
-      <About1 />
-      <Contact />
-      <Ticket1 />
-      <Direction styleNum={0} />
+      <PageHeader currentPage={"Policies"} banner={"banner-1 banner-2"} />
       <Policies />
+      <Direction styleNum={0} />
     </>
   );
 };

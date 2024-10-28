@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
+import InsiderEmbed from "./Insider";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { Autoplay } from "swiper/modules";
@@ -75,6 +75,7 @@ const TicketOne = ({ styleNum }) => {
             />
           )}
         </div>
+        <InsiderEmbed />
         {/* -- section-title -- */}
         <div className="ticket-content">
           <div className="d-flex flex-column flex-xl-row gap-50 gap-xl-30 align-items-xl-center">
