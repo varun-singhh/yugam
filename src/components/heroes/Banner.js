@@ -9,8 +9,9 @@ const Banner = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const backgrounds = [
+    "/images/hero-101.jpg",
+    "/images/hero-102.jpg",
     "/images/hero-5-bg.jpg",
-    "/images/hero-8-bg.jpg",
     "/images/hero-4.jpg",
   ];
 
@@ -80,17 +81,14 @@ const Banner = () => {
         >
           <div className="container">
             <div className="hero-inner-text position-relative text-left pt-5">
-              <h1 className="soundscapes no-stroke fs-120 fw-extra-bold mt-2 mb-0 wow slideInUp">
+              <h1 className="soundscapes no-stroke fs-120 fw-extra-bold mt-36 mb-0 wow slideInUp">
                 YUGAM 2024
               </h1>
               <h6 className="text-white fs-4 mt-4">
                 Unveil the Magic of Soundscapes
               </h6>
-
-              <div className="mobile-spacing">
-                <BannerSponsor parentClass="hero-brand-images mobile-sponsor" />
-                <EventDate styleNum={2} />
-              </div>
+              <BannerSponsor parentClass="mb-30 mb-xxl-50 hero-brand-images" />
+              <EventDate styleNum={2} />
             </div>
           </div>
         </div>
