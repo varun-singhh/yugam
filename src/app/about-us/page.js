@@ -7,7 +7,6 @@ import TicketTwo from "@/components/tickets/TicketTwo";
 import EventCounterTwo from "@/components/common/eventCounter/EventCounterTwo";
 import SponsorDark from "@/components/sponsores/SponsorDark";
 import Direction from "@/components/direction/Direction";
-import LayoutWrapper from "@/components/common/layoutWrapper";
 
 export const metadata = {
   title: "About-us",

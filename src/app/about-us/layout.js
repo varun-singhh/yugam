@@ -1,7 +1,7 @@
 import React from "react";
 import FooterOne from "@/components/common/footers/FooterOne";
 import NavbarFive from "@/components/common/navbars/NavbarFive";
-import LayoutWrapper from "@/components/common/layoutWrapper";
+
 import ScrollReset from "@/components/common/ScrollReset";
 const Layout = ({ children }) => {
   return (

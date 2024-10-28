@@ -10,7 +10,6 @@ import {
   Plus_Jakarta_Sans,
   Roboto,
 } from "next/font/google";
-import LayoutWrapper from "@/components/common/layoutWrapper";
 
 export const metadata = {
   title: "yugam next.js template",
