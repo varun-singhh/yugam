@@ -53,7 +53,7 @@ const ButtonCustom = ({
 
     const options = {
       key: data.key,
-      name: "Eventiva",
+      name: "Avighna Events",
       currency: data.currency,
       amount: data.amount,
       order_id: data.order_id,

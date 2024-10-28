@@ -33,7 +33,7 @@ async function sendConfirmationEmail(paymentDetails) {
     from: process.env.EMAIL_USER,
     to: paymentDetails.email,
     cc: "solomonsalfie73@gmail.com", //enter mail of admin/management
-    subject: "Payment Confirmation Eventiva",
+    subject: "Payment Confirmation Yugam",
     html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
             <!-- Header -->
@@ -125,7 +125,7 @@ async function sendConfirmationEmail(paymentDetails) {
 
             <!-- Footer -->
             <div style="background-color: #343a40; color: white; text-align: center; padding: 15px; font-size: 12px;">
-                <p style="margin: 5px 0;">© 2024 Eventiva. All rights reserved.</p>
+                <p style="margin: 5px 0;">© 2024 Avighna Events. All rights reserved.</p>
                 <p style="margin: 5px 0;">This is an automated email, please do not reply.</p>
             </div>
         </div>`,

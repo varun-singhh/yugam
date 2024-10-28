@@ -21,7 +21,7 @@ const AboutUs = () => {
       <Team />
       <HighlightTwo styleNum={1} />
       <EventCounterTwo />
-      <SponsorDark />
+      {/* <SponsorDark /> */}
       <TicketTwo />
       <Direction styleNum={0} />
     </>

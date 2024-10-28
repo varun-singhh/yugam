@@ -68,7 +68,7 @@ const TicketCount = () => {
       {/* -- ticket-form-wrapper --*/}
 
       <p className="extra-small fw-semibold d-flex justify-content-lg-end">
-        Sales close: Sat, Nov 6th, 8:00 AM (IST).
+        Sales close: Sat, Nov 16th, 10:00 AM (IST).
       </p>
       <div className="d-flex gap-3 justify-content-between">
         <div className="ticket-amounts d-flex align-items-center gap-0 gap-lg-3">

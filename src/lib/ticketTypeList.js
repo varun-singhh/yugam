@@ -1,20 +1,26 @@
 export const ticketTypeList = [
   {
     id: "ticket-form-1",
-    type: "Full Event Pass",
-    price: "1299",
+    type: "Cultural Pass (10:00 AM - 3:00 PM)",
+    price: "499",
     value: "option1",
   },
   {
     id: "ticket-form-2",
-    type: "Day 1 Pass (Cultural Fest)",
-    price: "499",
+    type: " Musical Fest (5:30 PM - 11:00 PM)",
+    price: "899",
     value: "option2",
   },
   {
     id: "ticket-form-3",
-    type: " Day 2 Pass (Musical Fest)",
-    price: "999",
+    type: "Full Event Pass",
+    price: "1299",
     value: "option3",
+  },
+  {
+    id: "ticket-form-4",
+    type: " VIP Pass (Fanpit)",
+    price: "1899",
+    value: "option4",
   },
 ];

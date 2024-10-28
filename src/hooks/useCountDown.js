@@ -8,7 +8,7 @@ const useCountDown = () => {
     currentMinutes: 0,
     currentSeconds: 0,
   });
-  const targetDate = new Date("2024-11-08T23:59:59").getTime();
+  const targetDate = new Date("2024-11-17T10:00:00").getTime();
 
   function updateCountdown() {
     const now = new Date().getTime();

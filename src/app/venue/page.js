@@ -17,7 +17,7 @@ const Venue = () => {
     <>
       <PageHeader currentPage={"Venue"} banner={"banner-1 banner-3"} />
       <AboutTwo />
-      <ConferenceHall />
+      {/* <ConferenceHall /> */}
       <HighlightTwo />
       <EventCounterTwo />
       <TicketTwo />

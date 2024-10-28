@@ -53,7 +53,7 @@ const Contact = () => {
                 <span className="straight-line"></span>Contact
               </span>
               <h2 className="title display-3 fw-extra-bold mb-n2 text-opacity">
-                Music
+                Avighna
               </h2>
               <h3 className="sub-title display-3 fw-extra-bold primary-text-shadow">
                 Get In Touch

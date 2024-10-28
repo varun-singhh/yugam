@@ -14,13 +14,15 @@ const ScheduleTabs = ({ ulClass }) => {
           aria-controls="day-1"
           aria-selected="true"
         >
-          <span className="fs-3 fw-extra-bold mb-0 custom-roboto">Day 1</span>
+          <span className="fs-3 fw-extra-bold mb-0 custom-roboto">
+            The Day Schedule
+          </span>
           <span className="fs-5 fw-semibold mb-0 custom-roboto d-none d-lg-block">
-            August 25, 2023
+            November 17, 2024
           </span>
         </button>
       </li>
-      <li className="nav-item" role="presentation">
+      {/* <li className="nav-item" role="presentation">
         <button
           className="schedule-button"
           id="day-2-tab"
@@ -36,7 +38,7 @@ const ScheduleTabs = ({ ulClass }) => {
             August 25, 2023
           </span>
         </button>
-      </li>
+      </li> */}
     </ul>
   );
 };

@@ -13,12 +13,12 @@ const AboutTwo = () => {
         <div className="row gy-50 gy-lg-0 gx-80 justify-content-lg-between align-items-lg-center">
           <div className="col-lg-4">
             <div>
-              <h1 className="display-5 custom-jakarta fw-extra-bold mb-20 mb-lg-30">
-                Grand Conference Hall
-              </h1>
+              <h3 className="display-6 custom-jakarta fw-extra-bold mb-20 mb-lg-30">
+                Sampurna Nand Sanskrit University
+              </h3>
               <div className="section-title section-title-style-2  mb-0">
                 <h3 className="sub-title display-3 fw-extra-bold primary-text-shadow custom-roboto">
-                  Basement
+                  Sports Ground
                 </h3>
               </div>
               {/* -- section-title --*/}
@@ -44,7 +44,6 @@ const AboutTwo = () => {
                 <Image src={ellipse_img} className="img-fluid" alt="img" />
               </div>
             </div>
-            {/* -- about-content-wrapper -- */}
           </div>
         </div>
       </div>
