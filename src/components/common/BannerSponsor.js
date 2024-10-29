@@ -2,8 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import brand_1 from "@/assets/images/hero-brand-1.png";
-import brand_2 from "@/assets/images/hero-brand-2.png";
+import brand_2 from "@/assets/images/paytm.png";
 import brand_3 from "@/assets/images/avighna-logo.png";
 const BannerSponsor = ({ parentClass }) => {
   return (
@@ -13,10 +12,13 @@ const BannerSponsor = ({ parentClass }) => {
         <Link href="#" aria-label="brand-image">
           <Image src={brand_3} className="img-fluid" alt="img" width={80} />
         </Link>
+        <Link
+          href="https://insider.in/yugam-2024-nov17-2024/event"
+          aria-label="brand-image"
+        >
+          <Image src={brand_2} className="img-fluid" alt="img" width={200} />
+        </Link>
         {/* <Link href="#" aria-label="brand-image">
-                    <Image src={brand_2}   className="img-fluid" alt="img" />
-                </Link>
-                <Link href="#" aria-label="brand-image">
                     <Image src={brand_3}   className="img-fluid" alt="img" />
                 </Link> */}
       </div>

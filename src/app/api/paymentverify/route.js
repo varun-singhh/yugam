@@ -35,19 +35,19 @@ async function sendConfirmationEmail(paymentDetails) {
     cc: "solomonsalfie73@gmail.com", //enter mail of admin/management
     subject: "Payment Confirmation Yugam",
     html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-            <!-- Header -->
-            <div style="background: linear-gradient(276deg, #e7801a 0%, #a83808 100%); padding: 20px; text-align: center; color: white;">
-                <h1 style="margin: 0;">Payment Confirmation</h1>
-            </div>
+    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+      <!-- Header -->
+      <div style="background: linear-gradient(276deg, #e7801a 0%, #a83808 100%); padding: 20px; text-align: center; color: white;">
+        <h1 style="margin: 0;">Payment Confirmation</h1>
+      </div>
 
-            <!-- Main Content -->
-            <div style="padding: 20px; background-color: #f8f9fa;">
-                <!-- Success Message -->
-                <div style="background-color: #d4edda; border: 1px solid #c3e6cb; padding: 15px; border-radius: 4px; color: #155724; margin-bottom: 20px;">
-                    <h2 style="margin-top: 0;">Payment Successful! ✅</h2>
-                    <p style="margin-bottom: 0;">Thank you for your booking with Eventiva.</p>
-                </div>
+      <!-- Main Content -->
+      <div style="padding: 20px; background-color: #f8f9fa;">
+        <!-- Success Message -->
+        <div style="background-color: #d4edda; border: 1px solid #c3e6cb; padding: 15px; border-radius: 4px; color: #155724; margin-bottom: 20px;">
+          <h2 style="margin-top: 0;">Payment Successful! ✅</h2>
+          <p style="margin-bottom: 0;">Thank you for your reservation at Yugam 2024.</p>
+        </div>
 
                 <!-- Payment Details -->
                 <div style="background-color: white; padding: 20px; border-radius: 4px; margin-bottom: 20px;">
@@ -117,11 +117,16 @@ async function sendConfirmationEmail(paymentDetails) {
                     }</p>
                 </div>
 
-                <!-- Support Message -->
-                <div style="text-align: center; margin-top: 20px;">
-                    <p style="color: #666;">If you have any questions about your payment, please contact our support team.</p>
-                </div>
-            </div>
+        <!-- Customer Info -->
+        <div style="background-color: white; padding: 20px; border-radius: 4px;">
+          <h3 style="color: #333; margin-top: 0;">Customer Information</h3>
+          <p style="margin: 5px 0;"><strong>Email:</strong> ${
+            paymentDetails.email
+          }</p>
+          <p style="margin: 5px 0;"><strong>Contact:</strong> ${
+            paymentDetails.contact
+          }</p>
+        </div>
 
             <!-- Footer -->
             <div style="background-color: #343a40; color: white; text-align: center; padding: 15px; font-size: 12px;">

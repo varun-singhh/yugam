@@ -24,4 +24,10 @@ export const menuList = [
     path: "/contact-us/",
     isDropdown: false,
   },
+  {
+    id: "05",
+    name: "POLICIES",
+    path: "/contact-us/#policy",
+    isDropdown: false,
+  },
 ];
