@@ -63,7 +63,8 @@ const EventDate = ({ styleNum }) => {
               <h4>Attending</h4>
             </div>
           </div>
-          <div className="col-md-3 col-xxl-2 col-xl-3 col-lg-3">
+
+          <div className="col-md-3 col-xxl-3 col-xl-3 col-lg-4">
             <div>
               <ButtonCustom className={buttonClass} link={"#ticket"}>
                 <span className="contact-plus-icon">
