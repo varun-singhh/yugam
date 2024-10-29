@@ -60,8 +60,8 @@ export const scheduleData = [
       {
         id: 10,
         date: "10:30 PM",
-        vanu: "Farewell Fireworks and Closing Ceremony",
-        desc: "Bid farewell to Yugam under a stunning fireworks display, marking the close of an epic celebration.",
+        vanu: "Farewell and Closing Ceremony",
+        desc: "Bid farewell to Yugam, marking the close of an epic celebration.",
       },
     ],
   },
