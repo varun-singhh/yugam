@@ -58,7 +58,7 @@ const ScheduleSeven = ({ styleNum }) => {
                 {/* -- section-title -- */}
                 <SectionDesc
                   desc={
-                    "Kick off with the grand inauguration, enjoy captivating performances by Rahgir and Iqlipse Nova, celebrate cultural heritage, and dance the night away with DJ Aerreo. Farewell with fireworks!"
+                    "Kick off with the grand inauguration, enjoy captivating performances by Rahgir and Iqlipse Nova, celebrate cultural heritage, and dance the night away with DJ Aerreo!"
                   }
                   className={sectionDescClass}
                 />
