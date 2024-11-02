@@ -97,7 +97,7 @@ const Direction = ({ styleNum }) => {
                         17th November 2024
                       </h4>
                       <h4 className="custom-jakarta fw-normal">
-                        Sunday 10:00 AM - 11:00 PM
+                        Sunday 03:00 PM - 11:00 PM
                       </h4>
                     </div>
                   </div>

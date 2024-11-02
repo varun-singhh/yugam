@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import SlotCounter from "react-slot-counter";
 import ButtonCustom from "@/components/common/buttons/ButtonCustom";
 import ContactPlusIcon from "@/components/common/icons/ContactPlusIcon";
 
 const EventDate = ({ styleNum }) => {
+  const [seats, setSeats] = useState(696);
   // styleNum 0 from Banner 1
   // styleNum 1 from Banner 2
   // styleNum 2 from Banner 5 and Banner 7
@@ -36,7 +37,7 @@ const EventDate = ({ styleNum }) => {
           <div className="col-md-4 col-xl-3 col-lg-4">
             <div className="event-content">
               <h2>17th Nov 2024</h2>
-              <h4>10:00 AM - 11:00 PM</h4>
+              <h4>03:00 PM - 11:00 PM</h4>
             </div>
           </div>
           <div className="col-md-5 col-xl-4 col-lg-5">
@@ -58,7 +59,7 @@ const EventDate = ({ styleNum }) => {
                     rootMargin: "0px 0px -100px 0px",
                   }}
                 /> */}
-                478+
+                {seats}+
               </span>
               <h4>Attending</h4>
             </div>
