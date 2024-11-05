@@ -8,7 +8,7 @@ import ScheduleTabs from "@/components/common/ScheduleTabs";
 import WordOpacity from "@/components/common/WordOpacity";
 import SectionTitleTwo from "@/components/common/sectionTitle/SectionTitleTwo";
 
-import schedule_img from "@/assets/images/home-1/schedule-image.png";
+import schedule_img from "@/assets/images/home-1/schedule-eimag.png";
 import ellipse_1 from "@/assets/images/home-1/ellipse-1.png";
 import ellipse_2 from "@/assets/images/home-1/ellipse-2.png";
 import { scheduleData } from "@/lib/scheduleData";

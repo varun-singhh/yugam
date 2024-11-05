@@ -4,10 +4,10 @@ import gallery_3 from "@/assets/images/gallery-3.jpg";
 import gallery_4 from "@/assets/images/gallery-4.jpg";
 import gallery_5 from "@/assets/images/gallery-5.jpg";
 import gallery_6 from "@/assets/images/gallery-6.jpg";
-import gallery_7 from "@/assets/images/gallery-7.jpg";
-import gallery_8 from "@/assets/images/gallery-8.jpg";
+import gallery_7 from "@/assets/images/gallery-7.jpeg";
+import gallery_8 from "@/assets/images/gallery-8.jpeg";
 import gallery_9 from "@/assets/images/gallery-9.jpg";
-import gallery_10 from "@/assets/images/gallery-10.webp";
+import gallery_10 from "@/assets/images/gallery-101.jpg";
 import gallery_11 from "@/assets/images/gallery-11.png";
 
 export const galleryData = [

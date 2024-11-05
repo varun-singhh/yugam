@@ -20,6 +20,8 @@ import SectionTitle from "@/components/common/sectionTitle/SectionTitle";
 import TicketCount from "@/components/common/TicketCount";
 import WordOpacity from "@/components/common/WordOpacity";
 import SectionTitleTwo from "@/components/common/sectionTitle/SectionTitleTwo";
+import ButtonCustom from "../common/buttons/ButtonCustom";
+import TicketIcon from "../common/icons/TicketIcon";
 
 const TicketOne = ({ styleNum }) => {
   const [seats, setSeats] = useState(478);
@@ -74,21 +76,24 @@ const TicketOne = ({ styleNum }) => {
           )}
         </div>
 
-        <div className="d-flex flex-md-wrap align-items-center gap-20 gap-md-5 gap-lg-50">
-          {/* <Link href="#" aria-label="brand-image">
-          <Image src={brand_3} className="img-fluid" alt="img" width={80} />
-        </Link> */}
-          <Link
-            href="https://insider.in/yugam-2024-nov17-2024/event"
-            aria-label="brand-image"
-          >
-            <Image src={brand_2} className="img-fluid" alt="img" width={400} />
-          </Link>
-        </div>
         <br />
-        <br />
-        <br />
-        <InsiderEmbed />
+
+        <ButtonCustom
+          className={"gap-2 btn-gradient mt-4 mt-lg-40 mt-xxl-60"}
+          link={"https://insider.in/event/yugam-2024-nov17-2024/buy-page"}
+        >
+          Book on{"  "}
+          <Image src={brand_2} className="img-fluid" alt="img" width={150} />
+        </ButtonCustom>
+        <b> &nbsp;&nbsp;</b>
+        <ButtonCustom
+          className={"gap-2 btn-gradient mt-4 mt-lg-40 mt-xxl-60 py-20 "}
+          link={"https://yugam-client.vercel.app/"}
+        >
+          <TicketIcon height={"25"} width={"25"} />
+          Book Tickets (Inclusive GST)
+        </ButtonCustom>
+        {/* <InsiderEmbed /> */}
         {/* -- section-title -- */}
         {/* <div className="ticket-content">
           <div className="d-flex flex-column flex-xl-row gap-50 gap-xl-30 align-items-xl-center">

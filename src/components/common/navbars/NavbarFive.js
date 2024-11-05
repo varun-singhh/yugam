@@ -103,9 +103,7 @@ const NavbarFive = () => {
                   </ul>
                   <ButtonFill
                     className={"gap-2"}
-                    link={
-                      "https://insider.in/event/yugam-2024-nov17-2024/buy-page/shows/671f836cef01e9b26e2c681e/Tickets"
-                    }
+                    link={"https://yugam-client.vercel.app/"}
                   >
                     <TicketIcon height={"25"} width={"25"} />
                     Get Ticket

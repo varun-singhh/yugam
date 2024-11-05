@@ -19,34 +19,51 @@ const LineupCard = ({ cardColor, genere, img, name, socil_link }) => {
           </h5>
           {socil_link ? (
             <div className="line-up-icons d-flex align-items-center gap-3 gap-lg-20">
-              <a
-                href={socil_link[0]?.link}
-                className="facebook-icon"
-                aria-label="facebook"
-              >
-                <Facebook height={"20"} width={"20"} />
-              </a>
-              <a
-                href={socil_link[1]?.link}
-                className="instagram-icon"
-                aria-label="instagram"
-              >
-                <Instagram />
-              </a>
-              <a
-                href={socil_link[2]?.link}
-                className="youtube-icon"
-                aria-label="youtube"
-              >
-                <Youtube />
-              </a>
-              <a
-                href={socil_link[3]?.link}
-                className="spotify-icon"
-                aria-label="spotify"
-              >
-                <Spotify />
-              </a>
+              {socil_link[0]?.link ? (
+                <a
+                  href={socil_link[0]?.link}
+                  className="facebook-icon"
+                  aria-label="facebook"
+                >
+                  <Facebook height={"20"} width={"20"} />
+                </a>
+              ) : (
+                <></>
+              )}
+
+              {socil_link[1]?.link ? (
+                <a
+                  href={socil_link[1]?.link}
+                  className="instagram-icon"
+                  aria-label="instagram"
+                >
+                  <Instagram />
+                </a>
+              ) : (
+                <></>
+              )}
+              {socil_link[2]?.link ? (
+                <a
+                  href={socil_link[2]?.link}
+                  className="youtube-icon"
+                  aria-label="youtube"
+                >
+                  <Youtube />
+                </a>
+              ) : (
+                <></>
+              )}
+              {socil_link[3]?.link ? (
+                <a
+                  href={socil_link[3]?.link}
+                  className="spotify-icon"
+                  aria-label="spotify"
+                >
+                  <Spotify />
+                </a>
+              ) : (
+                <></>
+              )}
             </div>
           ) : (
             <></>
