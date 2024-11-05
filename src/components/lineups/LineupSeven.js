@@ -15,7 +15,7 @@ import { singerData } from "@/lib/singerData";
 
 const LineupSeven = () => {
   const filteredData = singerData.filter((singer) =>
-    [4, 5, 6].includes(singer.id)
+    [5, 6, 7].includes(singer.id)
   );
   const prevRef = useRef(null);
   const nextRef = useRef(null);

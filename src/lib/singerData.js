@@ -1,11 +1,96 @@
 import lineup_image_1 from "@/assets/images/home-1/lineup-kathak.jpg";
-import lineup_image_2 from "@/assets/images/home-1/lineup-music.jpeg";
-import lineup_image_3 from "@/assets/images/home-1/lineup-ramp.webp";
+import lineup_image_2 from "@/assets/images/home-1/lineup-music-sitar.jpeg";
+import lineup_image_3 from "@/assets/images/home-1/lineup-music-flute.jpg";
 import lineup_image_4 from "@/assets/images/home-1/lineup-image-2.jpg";
 import lineup_image_5 from "@/assets/images/home-1/lineup-nova.jpg";
 import lineup_image_6 from "@/assets/images/home-1/lineup-aerreo.jpg";
+import lineup_image_7 from "@/assets/images/home-1/lineup-music-tabla.jpeg";
 
 export const singerData = [
+  {
+    id: 2,
+    name: "Megha Rawoot",
+    genere: "Folk Music - Sitar",
+    img: lineup_image_2,
+    socil_link: [
+      {
+        id: 1,
+        icon: "f",
+        link: "",
+      },
+      {
+        id: 2,
+        icon: "f",
+        link: "https://www.instagram.com/megharawoot/",
+      },
+      {
+        id: 3,
+        icon: "f",
+        link: "",
+      },
+      {
+        id: 4,
+        icon: "f",
+        link: "",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Kartikeya Vashist",
+    genere: "Folk Music - Flute",
+    img: lineup_image_3,
+    socil_link: [
+      {
+        id: 1,
+        icon: "f",
+        link: "",
+      },
+      {
+        id: 2,
+        icon: "f",
+        link: "https://www.instagram.com/kartikeyavashist/",
+      },
+      {
+        id: 3,
+        icon: "f",
+        link: "",
+      },
+      {
+        id: 4,
+        icon: "f",
+        link: "",
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Divyanshu Kumar",
+    genere: "Folk Music - Tabla",
+    img: lineup_image_7,
+    socil_link: [
+      {
+        id: 1,
+        icon: "f",
+        link: "",
+      },
+      {
+        id: 2,
+        icon: "f",
+        link: "https://www.instagram.com/divyanshu.tabla/",
+      },
+      {
+        id: 3,
+        icon: "f",
+        link: "",
+      },
+      {
+        id: 4,
+        icon: "f",
+        link: "",
+      },
+    ],
+  },
   {
     id: 1,
     name: "Kathak Fusion",
@@ -13,19 +98,7 @@ export const singerData = [
     img: lineup_image_1,
   },
   {
-    id: 2,
-    name: "Folk Music",
-    genere: "MUSIC",
-    img: lineup_image_2,
-  },
-  {
-    id: 3,
-    name: "Tradational Costume Ramp Walk ",
-    genere: "FAISHON",
-    img: lineup_image_3,
-  },
-  {
-    id: 4,
+    id: 5,
     name: "Rahgir",
     genere: "Soulful",
     img: lineup_image_4,
@@ -53,7 +126,7 @@ export const singerData = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     name: "Iqlipse Nova",
     genere: "pop",
     img: lineup_image_5,
@@ -81,7 +154,7 @@ export const singerData = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     name: "Aerreo",
     genere: "Techno",
     img: lineup_image_6,

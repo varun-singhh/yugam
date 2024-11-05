@@ -14,6 +14,9 @@ import ellipse_2 from "@/assets/images/home-1/ellipse-2.png";
 import { singerData } from "@/lib/singerData";
 
 const LineupOne = () => {
+  const filteredData = singerData.filter((singer) =>
+    [1, 2, 3, 4].includes(singer.id)
+  );
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const [_, setInit] = useState();
@@ -54,7 +57,7 @@ const LineupOne = () => {
           <div className="col-lg-8">
             <div className="swiper-custom-progress progress-gradient position-relative">
               <LineUpSwiper
-                data={singerData}
+                data={filteredData}
                 prevRef={prevRef}
                 nextRef={nextRef}
                 setInit={setInit}
