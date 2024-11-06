@@ -1,4 +1,6 @@
 import React from "react";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Script from "next/script";
 import "@/assets/css/animate.css";
 import "@/assets/scss/style.scss";
@@ -62,6 +64,8 @@ export default function RootLayout({ children }) {
       >
         <body suppressHydrationWarning={true}>
           <LayoutChildren>{children}</LayoutChildren>
+          <Analytics />
+          <SpeedInsights />
         </body>
       </html>
       <Script src="https://checkout.razorpay.com/v1/checkout.js" />
