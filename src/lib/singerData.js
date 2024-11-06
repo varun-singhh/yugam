@@ -4,7 +4,7 @@ import lineup_image_3 from "@/assets/images/home-1/lineup-music-flute.jpg";
 import lineup_image_4 from "@/assets/images/home-1/lineup-image-2.jpg";
 import lineup_image_5 from "@/assets/images/home-1/lineup-nova.jpg";
 import lineup_image_6 from "@/assets/images/home-1/lineup-aerreo.jpg";
-import lineup_image_7 from "@/assets/images/home-1/lineup-music-tabla.jpeg";
+// import lineup_image_7 from "@/assets/images/home-1/lineup-music-tabla.jpeg";
 
 export const singerData = [
   {
@@ -63,34 +63,34 @@ export const singerData = [
       },
     ],
   },
-  {
-    id: 4,
-    name: "Divyanshu Kumar",
-    genere: "Folk Music - Tabla",
-    img: lineup_image_7,
-    socil_link: [
-      {
-        id: 1,
-        icon: "f",
-        link: "",
-      },
-      {
-        id: 2,
-        icon: "f",
-        link: "https://www.instagram.com/divyanshu.tabla/",
-      },
-      {
-        id: 3,
-        icon: "f",
-        link: "",
-      },
-      {
-        id: 4,
-        icon: "f",
-        link: "",
-      },
-    ],
-  },
+  // {
+  //   id: 4,
+  //   name: "Divyanshu Kumar",
+  //   genere: "Folk Music - Tabla",
+  //   img: lineup_image_7,
+  //   socil_link: [
+  //     {
+  //       id: 1,
+  //       icon: "f",
+  //       link: "",
+  //     },
+  //     {
+  //       id: 2,
+  //       icon: "f",
+  //       link: "https://www.instagram.com/divyanshu.tabla/",
+  //     },
+  //     {
+  //       id: 3,
+  //       icon: "f",
+  //       link: "",
+  //     },
+  //     {
+  //       id: 4,
+  //       icon: "f",
+  //       link: "",
+  //     },
+  //   ],
+  // },
   {
     id: 1,
     name: "Kathak Fusion",
