@@ -73,7 +73,7 @@ const EventDate = ({ styleNum }) => {
                 <span className="contact-plus-icon">
                   <ContactPlusIcon />
                 </span>
-                Interested
+                Buy Tickets
               </ButtonCustom>
             </div>
           </div>
