@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import { analytics } from "../lib/firebaseAnalytics";
 import CountDown from "@/components/common/CountDown";
 import HighlightOne from "@/components/highlights/HighlightOne";
 import ScrollSection from "@/components/common/ScrollSection";
@@ -20,11 +22,16 @@ import BlogSeven from "@/components/blogs/BlogSeven";
 import Banner from "@/components/heroes/Banner";
 import Head from "next/head";
 
-export const metadata = {
-  title: "Yugam 2024",
-  description: "Homepage",
-};
+// export const metadata = {
+//   title: "Yugam 2024",
+//   description: "Homepage",
+// };
 const Home1 = () => {
+  useEffect(() => {
+    if (analytics) {
+      console.log("Firebase Analytics initialized");
+    }
+  }, []);
   return (
     <>
       <Head>
