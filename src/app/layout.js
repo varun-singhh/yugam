@@ -12,8 +12,8 @@ import {
 } from "next/font/google";
 
 export const metadata = {
-  title: "yugam next.js template",
-  description: "yugam next.js multipage webdite with next.js and bootstrap",
+  title: "Yugam 2024",
+  description: "Yugam 2024 Music & Culture Festival",
   icons: {
     icon: `${logo.src}`,
   },
