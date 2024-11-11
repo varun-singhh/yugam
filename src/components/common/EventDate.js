@@ -4,7 +4,7 @@ import ButtonCustom from "@/components/common/buttons/ButtonCustom";
 import ContactPlusIcon from "@/components/common/icons/ContactPlusIcon";
 
 const EventDate = ({ styleNum }) => {
-  const [seats, setSeats] = useState(696);
+  const [seats, setSeats] = useState(800);
   // styleNum 0 from Banner 1
   // styleNum 1 from Banner 2
   // styleNum 2 from Banner 5 and Banner 7
