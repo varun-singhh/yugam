@@ -51,7 +51,7 @@ const InsiderEmbed = () => {
   return (
     <div style={{ width: "100%", height: "700px", overflow: "hidden" }}>
       <iframe
-        src="https://yugam-client.vercel.app/"
+        src=" /"
         style={{
           width: "100%",
           height: "100%",

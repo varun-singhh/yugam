@@ -30,7 +30,7 @@ const AboutTwo = () => {
                   {" "}
                   <TicketIcon height={"25"} width={"35"} />{" "}
                 </span>
-                Get Ticket
+                Sold Out
               </ButtonCustom>
             </div>
           </div>

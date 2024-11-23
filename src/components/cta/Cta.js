@@ -91,10 +91,7 @@ const Cta = ({ styleNum }) => {
             </div>
             <div className="col-lg-4">
               <div className="cta-icon d-none d-lg-block ms-xl-70 ms-xxl-100">
-                <Link
-                  href="https://yugam-client.vercel.app/"
-                  aria-label="icons"
-                >
+                <Link href=" /" aria-label="icons">
                   <ArrowTopRightBig iconClr={iconClr} />
                 </Link>
               </div>

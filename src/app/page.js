@@ -112,8 +112,11 @@ const Home1 = () => {
 
       <NavbarFive />
       <Banner />
-      <CountDown styleNum={4} />
-      <TicketOne styleNum={5} />
+      <br></br>
+      <br></br>
+      <br></br>
+      {/* <CountDown styleNum={4} /> */}
+      {/* <TicketOne styleNum={5} /> */}
       <AboutSeven styleNum={0} />
 
       <LineupOne />

@@ -66,11 +66,8 @@ const EventDate = ({ styleNum }) => {
           </div>
           <div className="col-md-3 col-xxl-2 col-xl-3 col-lg-3">
             <div>
-              <ButtonCustom
-                className={buttonClass}
-                link={"https://yugam-client.vercel.app/"}
-              >
-                Buy Tickets
+              <ButtonCustom className={buttonClass} link={" /"}>
+                Event Over
               </ButtonCustom>
             </div>
           </div>

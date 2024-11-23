@@ -101,12 +101,9 @@ const NavbarFive = () => {
                       );
                     })}
                   </ul>
-                  <ButtonFill
-                    className={"gap-2"}
-                    link={"https://yugam-client.vercel.app/"}
-                  >
+                  <ButtonFill className={"gap-2"} link={" /"}>
                     <TicketIcon height={"25"} width={"25"} />
-                    Get Ticket
+                    Sold Out
                   </ButtonFill>
                 </div>
               </div>

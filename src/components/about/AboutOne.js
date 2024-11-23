@@ -22,10 +22,10 @@ const AboutOne = () => {
               </h1>
               <ButtonCustom
                 className={"gap-2 btn-gradient mt-4 mt-lg-40 mt-xxl-60"}
-                link={"https://yugam-client.vercel.app/"}
+                link={" /"}
               >
                 <TicketIcon height={"25"} width={"25"} />
-                Get Ticket
+                Sold Out
               </ButtonCustom>
             </div>
           </div>

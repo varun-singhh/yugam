@@ -88,7 +88,7 @@ const TicketOne = ({ styleNum }) => {
         <b> &nbsp;&nbsp;</b>
         <ButtonCustom
           className={"gap-2 btn-gradient mt-4 mt-lg-40 mt-xxl-60 py-20 "}
-          link={"https://yugam-client.vercel.app/"}
+          link={" /"}
         >
           <TicketIcon height={"25"} width={"25"} />
           Book Tickets (Inclusive GST)

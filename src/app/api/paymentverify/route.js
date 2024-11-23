@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// Function to get ticket description based on ticket ID
+// Function to Sold Out description based on ticket ID
 function getTicketDescription(activeTicket) {
   switch (activeTicket) {
     case "ticket-form-1":

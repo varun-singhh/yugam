@@ -56,11 +56,11 @@ const AboutSeven = ({ styleNum }) => {
                 className={sectionDescClass}
               />
               <ButtonCustom
-                link={"https://yugam-client.vercel.app/"}
+                link={" /"}
                 className={"btn-gradient  gap-2 mt-4 mt-lg-30 mt-xxl-40"}
               >
                 <TicketIcon height={"25"} width={"25"} />
-                Get Ticket
+                Sold Out
               </ButtonCustom>
             </div>
           </div>

@@ -18,10 +18,10 @@ const TicketTwo = () => {
 
             <ButtonCustom
               className={"gap-2 mt-4 mt-lg-40 btn-gradient"}
-              link={"https://yugam-client.vercel.app/"}
+              link={" /"}
             >
               <TicketIcon />
-              Get Ticket
+              Sold Out
             </ButtonCustom>
           </div>
         </div>
